@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header { 
+    background: radial-gradient( rgb(51, 52, 52), rgb(29, 32, 38), rgb(29, 27, 27), rgb(21, 10, 10));
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    padding-top: 30px;
+    padding-right: 40px;
+}
+body {
+    background: rgb(22, 30, 41);
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: space-between;
+}
+svg {
+    padding: 80px auto;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+main {
+    padding: 0;
+    height: 50em;
+    margin: 0;
+    width: 100%;   /* Full width */
+    /*background-image: url('https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');*/ /* Replace with your image URL */
+    background:rgb(29, 27, 27);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: inline-flex;
+}
+main section.Image {
+    display: inline-block;
+    padding: 150px 10px 0 0;
+}
+main section.aboutMe {
+    padding: 80px 0 0 60px;
+    color: rgb(97, 142, 255);
+    font-size: 50px;
+    display: inline-block;
+}
+section h1 {
+    color: white;
+    display: block;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    font-variation-settings:
+    "width" 100,
+    "GRAD" 0;
+}
+.specialty {
+    margin-left: 50px;
+    margin-top: 30px;
+    
+}
+.specialty span {
+    display: block;
+    font-size: 50px;
+    background: 
+    linear-gradient(
+        blue,
+        blue,
+        white,
+        white
+    );
+    background-clip: text;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    animation: colorfulText 2s ease-in-out infinite;
+}
+span.hidden {
+    display: none;
+}
+section p {
+    color: #f7f4f7;
+    font-size: 30px;
+    float: left;
+    width: 80%;
+    margin-left: 0;
+    text-align: justify;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: oblique;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+section p > span {
+    font-weight: bolder;
+    color: rgb(243, 241, 241);
+}
+.myname{
+    color: red;
+    cursor: pointer;
+}
+section div {
+    margin-top: 200px;
+    margin-left: 0;
+}
+section a{
+    text-decoration: none;
+    text-decoration-line: none;
+    border: 2px solid rgb(97, 192, 244);
+    background: radial-gradient(rgb(77, 177, 244), rgb(187, 241, 213));
+    padding: 20px;
+    margin-top: 100rm;
+    border-radius: 0 20px 0 30px;
+    margin-left: 20px;
+    color: rgb(10, 10, 10);
+    font-weight: bolder;
+}
+a.hundreddevs {
+    text-decoration: none;
+    text-decoration-line: none;
+    border: none;
+    background: none;
+    padding: 20px;
+    margin-top: 100rm;
+    border-radius: 0 20px 0 30px;
+    margin-left: 0;
+    color: rgb(244, 236, 9);
+    font-weight: bolder;
+}
+img.myImage {
+    width: 300px;
+    height: 300px;
+}
