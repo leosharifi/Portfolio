@@ -4,7 +4,7 @@
     margin: 0;
 }
 header { 
-    background: radial-gradient( rgb(51, 52, 52), rgb(29, 32, 38), rgb(29, 27, 27), rgb(21, 10, 10));
+    background: #4F6272;
     background-position: center;
     background-size: cover;
     height: 100px;
@@ -12,10 +12,12 @@ header {
     padding-right: 40px;
 }
 body {
-    background: rgb(22, 30, 41);
+    background: #1e1e1e;
     margin: 0;
     padding: 0;
-    height: 100%
+    height: 100%;
+    overflow: hidden;
+    
 }
 nav {
     display: flex;
@@ -24,9 +26,16 @@ nav {
     align-content: space-between;
 }
 svg {
-    padding: 80px auto;
-    margin-left: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
     cursor: pointer;
+    background: #404E5C;
+    padding: 3px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
 }
 .hidden {
     display: none;
@@ -37,7 +46,7 @@ main {
     margin: 0;
     width: 100%;   /* Full width */
     /*background-image: url('https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');*/ /* Replace with your image URL */
-    background:rgb(29, 27, 27);
+    background: #404E5C;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -48,14 +57,14 @@ main section.Image {
     padding: 150px 10px 0 0;
 }
 main section.aboutMe {
-    padding: 80px 0 0 60px;
-    color: rgb(97, 142, 255);
+    padding: 80px 0 0 60px;  
+
     font-size: 50px;
     display: inline-block;
 }
 section h1 {
-    color: white;
-    display: block;
+    color: #B7C3F3;
+    display: inline-flex;
     font-optical-sizing: auto;
     font-weight: lighter;
     font-style: normal;
@@ -63,9 +72,21 @@ section h1 {
     "width" 100,
     "GRAD" 0;
 }
+.hello {
+    display: inline-flex;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    margin-left: 20px;
+    vertical-align: middle;
+    color: white;
+    transform: rotate(-50deg);
+}
 .specialty {
     margin-left: 50px;
     margin-top: 30px;
+    border-left: 10px dotted #B7C3F3;
+    padding-left: 50px;
     
 }
 .specialty span {
@@ -104,7 +125,7 @@ section p > span {
     font-weight: bolder;
     color: rgb(243, 241, 241);
 }
-.myname{
+.myName{
     color: red;
     cursor: pointer;
 }
@@ -124,7 +145,7 @@ section a{
     color: rgb(10, 10, 10);
     font-weight: bolder;
 }
-a.hundreddevs {
+a.hundredDevs {
     text-decoration: none;
     text-decoration-line: none;
     border: none;
