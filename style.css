@@ -37,6 +37,10 @@ svg {
     width: 50px;
     border-radius: 50px;
 }
+svg:hover {
+    box-shadow: 20px;
+    background-color: linear-gradient(red, yellow);
+}
 .hidden {
     display: none;
 }
