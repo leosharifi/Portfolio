@@ -1,113 +1,119 @@
+:root {
+    --background: white, #B7C3F3;
+    --text: black, #DD7596;
+    --nav-background: #404E5C, #4F6272, #CF1259;
+}
+@media screen and (prefer-color-scheme: dark) {
+    :root {
+        --background: #404E5C, #4F6272;
+        --text: white, #DD7596;
+        --nav-background: #B7C3F3, #CF1259;
+        --border: white; 
+    }
+}
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-header { 
-    background: #4F6272;
-    background-position: center;
-    background-size: cover;
-    height: 100px;
-    padding-top: 30px;
-    padding-right: 40px;
-}
 body {
     background: #1e1e1e;
     margin: 0;
     padding: 0;
-    height: 100%;
-    overflow: hidden;
-    
+}
+header { 
+    display: flex;
+    background: #4F6272;
+    height: 100px;
+    padding-top: 30px;
+    padding-right: 40px;
+    width: 100%;
+    position: fixed;
+    justify-content: flex-end;
+    flex-direction: row;
 }
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: space-between;
+    align-self: flex-start;
+}
+svg:hover {
+    /* background-color: linear-gradient(red, yellow); */
+    border: 1px solid white;
+    color: transparent;
+    width: 70px;
+    height: 50px;
+    /* background: radial-gradient(red,blue, skyblue) */
 }
 svg {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-items: center;
     cursor: pointer;
-    background: #404E5C;
     padding: 3px;
     height: 50px;
     width: 50px;
     border-radius: 50px;
 }
-svg:hover {
-    box-shadow: 20px;
-    background-color: linear-gradient(red, yellow);
-}
 .hidden {
     display: none;
 }
 main {
-    padding: 0;
-    height: 50em;
+    padding: 10px;
+    height: 50rem;
     margin: 0;
-    width: 100%;   /* Full width */
-    /*background-image: url('https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');*/ /* Replace with your image URL */
     background: #404E5C;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    display: inline-flex;
-}
-main section.Image {
-    display: inline-block;
-    padding: 150px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 main section.aboutMe {
-    padding: 80px 0 0 60px;  
-
+    padding: 210px 0 0 80px;  
     font-size: 50px;
-    display: inline-block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
 }
+main section.Image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 200px 80px 0 0;
+}
+main section.Image .myImage {
+    border-radius: 10px;
+    height: 450px;
+    width: 450px;
+    align-self: center;
+    box-shadow:
+        0 50px 0 0 #00ffff,
+        0 0 50px 0 #ff00ff,
+        0 0 0 50px #00ffff;
+        
+}   
 section h1 {
-    color: #B7C3F3;
-    display: inline-flex;
     font-optical-sizing: auto;
     font-weight: lighter;
     font-style: normal;
+    align-self: flex-start;
     font-variation-settings:
     "width" 100,
     "GRAD" 0;
 }
-.hello {
-    display: inline-flex;
-    height: 100px;
-    width: 100px;
-    border-radius: 20px;
-    margin-left: 20px;
-    vertical-align: middle;
-    color: white;
-    transform: rotate(-50deg);
-}
+
 .specialty {
-    margin-left: 50px;
     margin-top: 30px;
     border-left: 10px dotted #B7C3F3;
-    padding-left: 50px;
-    
+    padding-left: 20px;
+    align-self: flex-start;
+
 }
 .specialty span {
-    display: block;
-    font-size: 50px;
-    background: 
-    linear-gradient(
-        blue,
-        blue,
-        white,
-        white
-    );
+    display: inline;
+    font-size: 40px;
+    color: #B7C3F3;
     background-clip: text;
     font-weight: 800;
     text-transform: uppercase;
-    -webkit-text-fill-color: transparent;
-    animation: colorfulText 2s ease-in-out infinite;
 }
 span.hidden {
     display: none;
@@ -124,30 +130,43 @@ section p {
     font-style: oblique;
     text-transform: capitalize;
     margin-top: 30px;
+    flex-grow: 1;
 }
 section p > span {
     font-weight: bolder;
     color: rgb(243, 241, 241);
 }
 .myName{
-    color: red;
+    color: black;
     cursor: pointer;
 }
 section div {
-    margin-top: 200px;
+    margin-top: 0;
+    margin-left: 50px;
+}
+section div.myContactPart {
     margin-left: 0;
+    margin-top: 50px;
+}
+section div .hire {
+    flex-grow: 5;
+    text-align: center;
+    width: 33.33%;
+    padding: 20px 90px;
+}
+section div .contact {
+    margin-left: 10px;
 }
 section a{
     text-decoration: none;
-    text-decoration-line: none;
-    border: 2px solid rgb(97, 192, 244);
-    background: radial-gradient(rgb(77, 177, 244), rgb(187, 241, 213));
-    padding: 20px;
-    margin-top: 100rm;
+    border: 2px solid white;
+    background: #4F6272;
+    padding: 20px 20px;
+    font-size: 30px;
+    margin-top: 100rem;
     border-radius: 0 20px 0 30px;
-    margin-left: 20px;
     color: rgb(10, 10, 10);
-    font-weight: bolder;
+    font-weight: bold;
 }
 a.hundredDevs {
     text-decoration: none;
@@ -160,8 +179,4 @@ a.hundredDevs {
     margin-left: 0;
     color: rgb(244, 236, 9);
     font-weight: bolder;
-}
-img.myImage {
-    width: 300px;
-    height: 300px;
 }
