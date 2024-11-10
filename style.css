@@ -53,18 +53,15 @@ nav ol li {
     cursor: pointer;
 
 }
-nav ol li:last-child {
-    margin-right: 300px;
-}
 svg:hover {
     /* background-color: linear-gradient(red, yellow); */
     border: 1px solid white;
-    color: transparent;
-    width: 70px;
+    width: 50px;
     height: 50px;
     /* background: radial-gradient(red,blue, skyblue) */
 }
 svg {
+    color: yellow;
     cursor: pointer;
     padding: 3px;
     height: 50px;
@@ -73,7 +70,6 @@ svg {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    margin-left: 300px;
 }
 main {
     padding: 10px;
