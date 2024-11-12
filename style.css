@@ -38,7 +38,6 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    align-items: center;
     float: left;
 }
 nav ol {
@@ -46,19 +45,39 @@ nav ol {
     justify-content: center;
     flex-direction: row;
     align-items: center;
+    border: 2px ridge #404e5c;
+    border-radius: 30px;
+    box-shadow: 0 20px 10px -10px #b7c3f3;
+
 }
 nav ol li {
     margin-left: 100px;
-    list-style-type: square;
+    list-style-type: none;
     cursor: pointer;
+    font-size: 20px;
+    color: #b7c3f3;
+}
+li:last-child {
+    margin-right: 80px;
+}
+li:hover {
+    color: #cf1259;
+    transition: color 1s ease;
+    font-weight: bolder;
+    padding-bottom: 5px;
+    border-bottom: 5px ridge #cf1259;
+    transition: border 2s ease;
 
 }
-svg:hover {
-    /* background-color: linear-gradient(red, yellow); */
-    border: 1px solid white;
-    width: 50px;
-    height: 50px;
-    /* background: radial-gradient(red,blue, skyblue) */
+div.iconsTheme {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    margin-left: 30px;
+    border: 1px groove rgb(46, 46, 46);
+    border-radius: 52px;
+    padding: 0 5px;
 }
 svg {
     color: yellow;
@@ -67,9 +86,31 @@ svg {
     height: 50px;
     width: 50px;
     border-radius: 50px;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
+    margin-left: 10px;
+    transition: font-size 10s ease;
+}
+.moon {
+    border-right: 2px inset rgb(46, 46, 46);
+    border-radius: 0;
+    padding-right: 5px;
+    color: #dd7596;
+    transition: color 10s ease;
+}
+.hidden {
+    color: #dd7596;
+    transition: color 5s ease;
+}
+.moon:hover, .hidden:hover {
+    fill: yellow;
+    color: yellow;
+    transition: color 2s ease;
+}
+svg:hover {
+    /* background-color: linear-gradient(red, yellow); */
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    /* background: radial-gradient(red,blue, skyblue) */
 }
 main {
     padding: 10px;
@@ -96,11 +137,11 @@ main section.Image {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 200px 80px 0 0;
+    padding: 250px 80px 0 0;
 }
 main section.Image .myImage {
     border-radius: 10px;
-    height: 450px;
+    height: 420px;
     width: 450px;
     align-self: center;
     box-shadow:
@@ -121,7 +162,7 @@ section h1 {
 
 .specialty {
     margin-top: 30px;
-    border-left: 10px dotted #B7C3F3;
+    border-left: 4px outset #B7C3F3;
     padding-left: 20px;
     align-self: flex-start;
 }
@@ -129,9 +170,24 @@ section h1 {
     display: inline;
     font-size: 40px;
     color: #B7C3F3;
+    transition: color 1s ease-out;
     background-clip: text;
     font-weight: 800;
     text-transform: uppercase;
+}
+@keyframes animate{
+    0% {
+        color: blue;
+
+    }
+    90% {
+        color: #ae62e9;
+    }
+}
+.specialty span:hover {
+    color: #ae62e9;
+    transition: color -1s ease;
+    animation: animate 10s color;
 }
 span.hidden {
     display: none;
@@ -167,13 +223,12 @@ section div.myContactPart {
     margin-top: 50px;
 }
 section div .hire {
-    flex-grow: 5;
     text-align: center;
     width: 33.33%;
     padding: 20px 90px;
 }
 section div .contact {
-    margin-left: 10px;
+    margin-left: 10px;  
 }
 section a{
     text-decoration: none;
