@@ -101,7 +101,7 @@ svg {
     transition: color 5s ease;
 }
 .moon:hover, .hidden:hover {
-    fill: yellow;
+    fill: yellow; 
     color: yellow;
     transition: color 2s ease;
 }
