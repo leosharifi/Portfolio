@@ -94,7 +94,7 @@ svg {
     border-radius: 0;
     padding-right: 5px;
     color: #dd7596;
-    transition: color 10s ease;
+    transition: color 5s ease;
 }
 .hidden {
     color: #dd7596;
