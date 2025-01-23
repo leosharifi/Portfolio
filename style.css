@@ -44,6 +44,12 @@ main {
     text-align: center;
     padding: 30px 30px 10px 30px;
 }
+.firstContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+}
 h1 {
     color: rgb(178, 224, 194);
     padding-top: 100px;
@@ -56,3 +62,69 @@ p{
     font-size: 30px;
     margin: 0;
 }
+.icon-dashboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.tooltipIcon {
+    position: relative;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
+
+.resumeIcon {
+    width: 35px;
+    height: 35px;
+    border-radius: 18px;
+    padding: 8px;
+    cursor: pointer;
+    margin-left: 20px;
+    background: rgb(178, 224, 194);
+    border: 1px solid rgb(134, 194, 149);
+}
+
+.resume {
+    background: linear-gradient(rgb(134, 194, 149), rgb(134, 194, 149));
+    color: white;
+    position: absolute;
+    bottom: -50px;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: 800;
+    font-style: oblique;
+    border-radius: 10px;
+    pointer-events: none;
+    white-space: nowrap;
+    transition: opacity 300ms ease-in-out;
+    opacity: 0;
+}
+
+.resume::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 31px;
+    height: 0;
+    width: 0;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    border-bottom: 12px solid rgb(134, 194, 149);
+}
+.twitterToolTip::before {
+    left: 43px;
+}
+
+.resumeIcon:hover {
+    box-shadow: 0 0 30px pink;
+    background: rgb(178, 224, 194);
+}
+
+.tooltipIcon:hover .resume{
+    opacity: 1;
+}
+
