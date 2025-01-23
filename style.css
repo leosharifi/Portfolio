@@ -50,9 +50,16 @@ main {
     justify-content: center;
     align-items: center;;
 }
+.ProfilePicture {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 50px;
+    border-radius: 150px;
+}
+
 h1 {
     color: rgb(178, 224, 194);
-    padding-top: 100px;
     font-size: 50px;
     margin-bottom: 25px;
     font-style: italic;
@@ -80,6 +87,7 @@ p{
 .resumeIcon {
     width: 35px;
     height: 35px;
+    object-fit: cover;
     border-radius: 18px;
     padding: 8px;
     cursor: pointer;
