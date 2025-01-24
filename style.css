@@ -17,21 +17,18 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   
   .video-background {
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   
   video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: fixed;
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
@@ -123,9 +120,7 @@ p{
     border-left: 12px solid transparent;
     border-bottom: 12px solid rgb(134, 194, 149);
 }
-.twitterToolTip::before {
-    left: 43px;
-}
+
 
 .resumeIcon:hover {
     box-shadow: 0 0 30px pink;
