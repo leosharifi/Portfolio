@@ -1,17 +1,34 @@
-/* :root { */
-    /* --background: white, #B7C3F3;
-    --text: black, #DD7596;
-    --nav-background: #404E5C, #4F6272, #CF1259;
-}
-@media screen and (prefer-color-scheme: dark) {
+:root {
+    --background:     #0f0e17;
+    --headline:       #fffffe;
+    --paragraph:      #a7a9be;
+    --cardBackground: #fffffe;
+    --cradHeadline:   #0f0e17;
+    --cardParagraph:  #2e2f3e;
+    --cardtagback:    #ff8906;
+    --cardtagtext:    #fffffe;
+    --cardhighlit:    #e53170;
+    --button:         #ff8906; 
+    --buttonText:     #fffffe;
+    --border:         #0f0e17;
+    --backgroundHover: radial-gradient(circle,#f25f4c , #ff8906, #e53170);
+ }
+@media screen and (prefer-color-scheme: light) {
     :root {
-        --background: #404E5C, #4F6272;
-        --text: white, #DD7596;
-        --nav-background: #B7C3F3, #CF1259;
-        --border: white; 
-    } */
-/* } */
-
+        --background:     #fffffe;
+        --headline:       #0f0e17;
+        --paragraph:      #2e2f3e;
+        --cardBackground: #0f0e17;
+        --cradHeadline:   #fffffe;
+        --cardParagraph:  #a7a9be;
+        --cardtagback:    #ff8906;
+        --cardtagtext:    #fffffe;
+        --cardhighlit:    #e53170;
+        --button:         #ff8906; 
+        --buttonText:     #fffffe;
+        --backgroundHover: radial-gradient(circle,#f25f4c , #ff8906, #e53170);
+    }
+}
 
 body, html {
     margin: 0;
@@ -56,13 +73,13 @@ main {
 }
 
 h1 {
-    color: rgb(178, 224, 194);
+    color: var(--headline);
     font-size: 50px;
     margin-bottom: 25px;
     font-style: italic;
 }
 p{
-    color: rgb(134, 194, 149);
+    color: var(--paragraph);
     font-size: 30px;
     margin: 0;
 }
@@ -89,13 +106,13 @@ p{
     padding: 8px;
     cursor: pointer;
     margin-left: 20px;
-    background: rgb(178, 224, 194);
-    border: 1px solid rgb(134, 194, 149);
+    background: var(--button);
+    border: 1px solid var(--border);
 }
 
 .resume {
-    background: linear-gradient(rgb(134, 194, 149), rgb(134, 194, 149));
-    color: white;
+    background: var(--button);
+    color: var(--buttonText);
     position: absolute;
     bottom: -50px;
     padding: 5px 20px;
@@ -118,13 +135,13 @@ p{
     width: 0;
     border-right: 12px solid transparent;
     border-left: 12px solid transparent;
-    border-bottom: 12px solid rgb(134, 194, 149);
+    border-bottom: 12px solid var(--button);
 }
 
 
 .resumeIcon:hover {
-    box-shadow: 0 0 30px pink;
-    background: rgb(178, 224, 194);
+    box-shadow: 0 0 30px var(--button);
+    background: var(--backgroundHover);
 }
 
 .tooltipIcon:hover .resume{
