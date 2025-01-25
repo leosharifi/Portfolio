@@ -1,0 +1,152 @@
+.video-background {
+    position: relative;
+    width: 100%;
+}
+  
+.firstContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProfilePicture {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 50px;
+    border-radius: 150px;
+    box-shadow: 0 0 80px var(--button);
+}
+
+p.sortInfoAboutMe{
+    color: var(--paragraph);
+    font-size: 25px;
+    margin: 0;
+}
+
+.icon-dashboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.tooltipIcon {
+    position: relative;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
+
+.resumeIcon {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 18px;
+    padding: 8px;
+    cursor: pointer;
+    margin-left: 20px;
+    border: 1px dashed var(--border);
+}
+
+.resume {
+    background: var(--button);
+    color: var(--buttonText);
+    position: absolute;
+    bottom: -50px;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 10px;
+    pointer-events: none;
+    white-space: nowrap;
+    transition: opacity 300ms ease-in-out;
+    opacity: 0;
+}
+
+.resume::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 31px;
+    height: 0;
+    width: 0;
+    border-right: 11px solid transparent;
+    border-left: 11px solid transparent;
+    border-bottom: 11px solid var(--button);
+}
+
+.before::before {
+    left: 40px;
+}
+
+.resumeIcon:hover {
+    box-shadow: 0 0 30px var(--button);
+}
+
+.tooltipIcon:hover .resume{
+    opacity: 1;
+}
+
+.about {
+    padding: 0 50px 0 50px;
+}
+
+.aboutMe {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    color: var(--headline);
+    font-family: "Miltonian", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 35px;
+}
+
+.aboutContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 110px;
+    border-radius: 10px;
+    padding: 20px 0 80px 130px;
+}
+
+.textOrParagraph, .imageOfTheAbout {
+    display: block;
+    color: var(--paragraph);
+    border-radius: 50px;
+}
+
+.imageOfTheAbout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.amazingTeacher {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--highlights);
+
+}
+
+.textOrParagraph p {
+    font-family: "Special Elite", serif;
+    font-weight: 500;
+    font-style: oblique;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0;
+}
+
+.myprofile {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 250px;
+    border: 1px solid var(--border);
+    box-shadow: 0 0 80px var(--button);
+}
