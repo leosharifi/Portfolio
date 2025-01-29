@@ -19,12 +19,6 @@
     box-shadow: 0 0 80px var(--button);
 }
 
-p.sortInfoAboutMe{
-    color: var(--paragraph);
-    font-size: 25px;
-    margin: 0;
-}
-
 .icon-dashboard {
     display: flex;
     flex-direction: row;
@@ -139,7 +133,7 @@ p.sortInfoAboutMe{
     font-style: oblique;
     font-size: 20px;
     line-height: 32px;
-    margin: 0;
+    margin-top: 0;
 }
 
 .myprofile {
