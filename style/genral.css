@@ -40,7 +40,11 @@ body, html {
     height: 1000%;
     /* overflow: hidden; */
 }
-
+body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
 video {
     position: fixed;
     min-width: 100%;
@@ -52,8 +56,8 @@ video {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    text-align: center;
-    padding: 30px 30px 100px 30px;
+    padding: 0 30px 100px 30px;
+    height: 800px;
 }
 
 h1 {

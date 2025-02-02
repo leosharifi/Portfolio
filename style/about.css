@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .ProfilePicture {
@@ -85,19 +84,25 @@
 }
 
 .about {
-    padding: 0 50px 0 50px;
+    padding: 10px 50px 0 50px;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .aboutMe {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    flex-direction: column;
     gap: 20px;
     color: var(--headline);
     font-family: "Miltonian", serif;
     font-weight: 500;
     font-style: italic;
-    font-size: 35px;
+    font-size: 45px;
 }
 
 .aboutContent {
