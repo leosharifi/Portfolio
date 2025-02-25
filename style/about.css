@@ -106,12 +106,12 @@
 }
 
 .about {
-    padding: 10px 50px 0 50px;
+    padding: 10px 30px;
     background: var(--background);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 .aboutMe {
@@ -119,32 +119,25 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     color: var(--headline);
     font-family: "Miltonian", serif;
     font-weight: 500;
-    font-style: italic;
-    font-size: 45px;
+    font-style: normal;
+    font-size: 30px;
 }
 
 .aboutContent {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 110px;
-    border-radius: 10px;
-    padding: 20px 0 80px 130px;
+    column-gap: 0;
 }
 
-.textOrParagraph, .imageOfTheAbout {
-    display: block;
-    color: var(--paragraph);
-    border-radius: 50px;
-}
-
-.imageOfTheAbout {
+.textOrParagraph {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    color: var(--paragraph);
+    padding: 20px;
 }
 
 .amazingTeacher {
@@ -160,14 +153,14 @@
     font-style: oblique;
     font-size: 20px;
     line-height: 32px;
-    margin-top: 0;
 }
 
 .myprofile {
-    width: 350px;
-    height: 350px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 2em;
     object-fit: cover;
-    border-radius: 250px;
+    border-radius: 5px;
     border: 1px solid var(--border);
-    box-shadow: 0 0 80px var(--button);
+    box-shadow: 0 0 50px var(--button);
 }
