@@ -1,0 +1,57 @@
+
+
+
+/* Skill Box */
+.skill-box {
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.skill-box:first-of-type {
+    margin-top: 35px;
+}
+
+.htmlLogo, .cssLogo, .jsLogo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+    align-self: center;
+    border-radius: 30px;
+}
+.skillInfo {
+    width: 100%;
+}
+.skill-title {
+    color: white;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-size: 23px;
+}
+
+.skill-bar {
+    background: #1d2330;
+    height: 12px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    background: linear-gradient(to right, #ff007f, #ff9966);
+    width: 0;
+    animation: html 2s;
+    transition: width 2s ease-in-out;
+}
+
+/* Different Skill Levels */
+.html { width: 85%; }
+.css { width: 75%; }
+.js { width: 70%; }
