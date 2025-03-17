@@ -20,14 +20,14 @@
     height: 60px;
     object-fit: cover;
     margin-right: 10px;
-    align-self: center;
-    border-radius: 30px;
+}
+.jspng {
+    object-fit: contain; margin-right: 15px;
 }
 .skillInfo {
     width: 100%;
 }
 .skill-title {
-    color: white;
     font-weight: bold;
     display: block;
     text-align: left;
@@ -47,11 +47,35 @@
     height: 100%;
     background: linear-gradient(to right, #ff007f, #ff9966);
     width: 0;
-    animation: html 2s;
-    transition: width 2s ease-in-out;
+    transition: width 4s ease-in-out;
 }
 
 /* Different Skill Levels */
-.html { width: 85%; }
-.css { width: 75%; }
-.js { width: 70%; }
+.html { width: 95%; animation: html 2s;}
+.css { width: 90%; animation: css 2s;}
+.js { width: 80%; animation: js 2s;}
+@keyframes html {
+    from{
+        width: 0;
+    }
+    to{
+        width: 95%;
+    }
+}
+@keyframes css {
+    from{
+        width: 0;
+    }
+    to{
+        width: 90%;
+    }
+    
+}
+@keyframes js {
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
