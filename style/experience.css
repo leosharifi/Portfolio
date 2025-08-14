@@ -1,7 +1,7 @@
 .exanded {
-    padding: 10px 50px 10px 50px;
+    padding: 10px 0;
     color: white;
-    background: #111827;
+    /* background: #111827; */
     display: flex;
     justify-content: center;
     flex-direction: column;    
@@ -21,7 +21,7 @@
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     place-items: center; 
-    column-gap: 10px;
+    column-gap: 10px; 
 }
 
 .work-ex-section {
@@ -32,7 +32,7 @@
 .WorkEx, .education {
     column-gap: 10px; 
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 400;
     padding-bottom: 30px;
 }
 .educationIcon {
@@ -59,18 +59,18 @@ div.infoBox {
         & .workPosition {
             margin: 0; 
             font-size: 18px; 
-            font-weight: 500;
+            font-weight: 700;
             color: #F9FAFB;
         }
         & .workTitle {
             color: #4F46E5; 
             line-height: 35px;
             margin: 3px; 
-            font-size: 18px; 
+            font-size: 20px; 
             font-weight: 500;
         }
         & .aboutWork {
-            font-size: 17px; 
+            font-size: 18px; 
             color: #4B4563; 
             & a{
                 color: rgb(23, 23, 218);
@@ -79,3 +79,13 @@ div.infoBox {
             }
         }
 }
+
+
+/*NEW THINGS TO ADD!*/
+div.skillsArea {
+    background: #111827;
+    
+    
+    
+}
+
