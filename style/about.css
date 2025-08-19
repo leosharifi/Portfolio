@@ -89,7 +89,7 @@
     height: 120px;
     border: 1px solid var(--paragraph);
     border-radius: 20px;
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -106,7 +106,7 @@
 }
 
 .about {
-    padding: 10px 30px;
+    padding: 0 30px;
     background: var(--background);
     display: flex;
     flex-direction: column;
@@ -135,7 +135,10 @@
 
 .textOrParagraph {
     color: var(--paragraph);
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
 }
 
 .amazingTeacher {

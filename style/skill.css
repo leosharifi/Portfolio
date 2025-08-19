@@ -1,35 +1,50 @@
-
+/* The Things To update */
 div.skillsArea {
     background: #111827;
-    
+
+    height: 450px;
     
     .skillsContainer {
         display: flex;
         align-items: center;
         flex-direction: column;
+
         h3 {
-            margin: 0; padding: 0;
+            margin: 0; 
+            padding: 0;
+
             strong {
                 color: white;
                 font-size: 24px;
                 margin-bottom: 10px;
             }
         }
-
-
+        
         .skillSet {
             padding: 20px;
             display: flex; 
             flex-direction: row; 
             gap: 30px;
 
+            h3 strong {
+                font-size: 20px;    
+            }
+
             .skill {
                 background: rgb(99, 95, 102); 
                 border: 1px solid rgb(66, 63, 70);
                 border-radius: 5px; 
                 padding: 20px;
+                transition: background 0.5s ease, transform 0.5s ease;
             }
-        }
+            .skill:hover {
+                background: rgb(131, 79, 199);
+                cursor: pointer;
+                transform: scale(1.5)
+            }
+
+
+        }  
     }
 }
 

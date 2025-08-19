@@ -57,8 +57,8 @@ video.background {
 main {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 0 30px 100px 30px;
-    height: 800px;
+    padding: 0 30px 10px 0;
+    
 }
 
 h1 {
