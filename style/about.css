@@ -110,11 +110,16 @@
     background: var(--background);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .aboutMe {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
     color: var(--headline);
     font-family: "Miltonian", serif;
     font-weight: 500;
@@ -130,6 +135,7 @@
 
 .textOrParagraph {
     color: var(--paragraph);
+   
 }
 
 .amazingTeacher {
