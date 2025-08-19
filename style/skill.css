@@ -1,81 +1,36 @@
 
-
-
-/* Skill Box */
-.skill-box {
-    margin-bottom: 15px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px;
-}
-.skill-box:first-of-type {
-    margin-top: 35px;
-}
-
-.htmlLogo, .cssLogo, .jsLogo {
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    margin-right: 10px;
-}
-.jspng {
-    object-fit: contain; margin-right: 15px;
-}
-.skillInfo {
-    width: 100%;
-}
-.skill-title {
-    font-weight: bold;
-    display: block;
-    text-align: left;
-    margin-bottom: 8px;
-    font-size: 23px;
-}
-
-.skill-bar {
-    background: #1d2330;
-    height: 12px;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-}
-
-.skill-fill {
-    height: 100%;
-    background: linear-gradient(to right, #ff007f, #ff9966);
-    width: 0;
-    transition: width 4s ease-in-out;
-}
-
-/* Different Skill Levels */
-.html { width: 95%; animation: html 2s;}
-.css { width: 90%; animation: css 2s;}
-.js { width: 80%; animation: js 2s;}
-@keyframes html {
-    from{
-        width: 0;
-    }
-    to{
-        width: 95%;
-    }
-}
-@keyframes css {
-    from{
-        width: 0;
-    }
-    to{
-        width: 90%;
-    }
+div.skillsArea {
+    background: #111827;
     
-}
-@keyframes js {
-    from{
-        width: 0;
+    
+    .skillsContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h3 {
+            margin: 0; padding: 0;
+            strong {
+                color: white;
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+        }
+
+
+        .skillSet {
+            padding: 20px;
+            display: flex; 
+            flex-direction: row; 
+            gap: 30px;
+
+            .skill {
+                background: rgb(99, 95, 102); 
+                border: 1px solid rgb(66, 63, 70);
+                border-radius: 5px; 
+                padding: 20px;
+            }
+        }
     }
-    to{
-        width: 80%;
-    }
 }
+
+

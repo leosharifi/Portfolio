@@ -14,7 +14,6 @@
     font-weight: 500;
     font-style: normal;
     font-size: 30px;
-    padding-bottom: 30px;
 }
 
 .secondcontainer {
@@ -81,11 +80,4 @@ div.infoBox {
 }
 
 
-/*NEW THINGS TO ADD!*/
-div.skillsArea {
-    background: #111827;
-    
-    
-    
-}
 
