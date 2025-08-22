@@ -107,7 +107,7 @@
 
 .about {
     padding: 0 30px;
-    background: var(--background);
+    /* background: var(--background); */
     display: flex;
     flex-direction: column;
     justify-content: center;
