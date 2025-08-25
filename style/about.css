@@ -115,11 +115,6 @@
 }
 
 .aboutMe {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 10px;
     color: var(--headline);
     font-family: "Miltonian", serif;
     font-weight: 500;
@@ -130,7 +125,13 @@
 .aboutContent {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 0;
+    column-gap: 1px;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 
 .textOrParagraph {
