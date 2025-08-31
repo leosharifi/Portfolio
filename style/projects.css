@@ -87,12 +87,9 @@ div.getInTouch {
         font-weight: 350; /*Change later*/
     }
     div.contactContainer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        column-gap: 5em;  /*Change later*/
-        border: 1px solid white;  /*Change later*/
-        height: 200px;  /*Change later*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2em; /* Change later */
 
         .contactInfo {
             display: flex;
@@ -100,15 +97,52 @@ div.getInTouch {
             justify-content: flex-start;
             align-items: flex-start;
             padding: 10px; /*Change later*/
-            border: 1px solid white; /*Change later*/
+            width: 85%; /*Change later*/
         }
         .contactForm {
-            width: 100%; /*Change later*/
-
+            background: var(--background); /* Change later */
+            border-radius: 10px; /* Change later */
+            transition: box-shadow 0.5s ease;
             form {
                 display: flex;
                 flex-direction: column;
+                padding: 2em; /* Change later */
+                label {
+                    margin-bottom: 0.5em; /* Change later */
+                    font-weight: 800;  /* Change later */
+                    color: #D1D5DB;
+                }
+                input {
+                    padding: 15px; /* change later */
+                    margin-bottom: 30px; /* change later */
+                    border-radius: 10px; /* change later */
+                    border: none;
+                    background: #374151;
+                    color: white;
+                    font-size: 15px;
+                }
+                textarea {
+                    padding: 15px; /* change later */
+                    margin-bottom: 30px; /* change later */
+                    border-radius: 10px; /* change later */
+                    border: none;
+                    background: #374151;
+                    color: white;
+                    font-size: 15px;
+                }
+                button {
+                    cursor: pointer;
+                    padding: 15px; /* change later */
+                    border-radius: 10px; /* change later */
+                    border: none;
+                    background: blue;
+                    color: white;
+                    font-size: 15px;
+                }
             }
+        }
+        .contactForm:hover {
+            box-shadow: 0 2px 40px var(--button);
         }
         
     }
