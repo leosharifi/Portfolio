@@ -73,3 +73,43 @@ div.recentProjects {
         }
     }
 }
+
+/*Get In Touch*/
+
+div.getInTouch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h3 {
+        font-size: 1.4em; /*Change later*/
+        font-weight: 350; /*Change later*/
+    }
+    div.contactContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 5em;  /*Change later*/
+        border: 1px solid white;  /*Change later*/
+        height: 200px;  /*Change later*/
+
+        .contactInfo {
+            display: flex;
+            flex-direction: column; 
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 10px; /*Change later*/
+            border: 1px solid white; /*Change later*/
+        }
+        .contactForm {
+            width: 100%; /*Change later*/
+
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        
+    }
+}
