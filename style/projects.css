@@ -98,6 +98,42 @@ div.getInTouch {
             align-items: flex-start;
             padding: 10px; /*Change later*/
             width: 85%; /*Change later*/
+
+
+
+            div.socialLinks {
+                display: flex;
+                flex-direction: column;
+                width: 100%; 
+                padding: 1em 0;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 0.5em;
+                    margin-bottom: 20px;
+                    background: blue; /* Change later */
+                    color: white; 
+                    text-decoration: none;
+                    padding: 0 1em;
+                    height: 60px;
+                    border-radius: 10px;
+                    transition: box-shadow 0.5s ease;
+                    .i {
+                        font-size: 1.5em;
+                        font-weight: 500;
+                    }
+                    span {
+                        font-size: 1em;
+                        font-weight: 800;
+                    }
+                    
+                }
+                a:hover {
+                    box-shadow: 0 0 40px var(--button);
+                }
+                
+            }
         }
         .contactForm {
             background: var(--background); /* Change later */
@@ -121,6 +157,10 @@ div.getInTouch {
                     color: white;
                     font-size: 15px;
                 }
+                input:focus {
+                    outline: none;
+                    box-shadow: 0 0 0 2px var(--button);
+                }
                 textarea {
                     padding: 15px; /* change later */
                     margin-bottom: 30px; /* change later */
@@ -129,6 +169,10 @@ div.getInTouch {
                     background: #374151;
                     color: white;
                     font-size: 15px;
+                }
+                textarea:focus {
+                    outline: none;
+                    box-shadow: 0 0 0 2px var(--button);
                 }
                 button {
                     cursor: pointer;
