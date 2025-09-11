@@ -40,7 +40,7 @@ div.skillsArea {
             .skill:hover {
                 background: rgb(131, 79, 199);
                 cursor: pointer;
-                transform: scale(1.5)
+                transform: scale(1.5);
             }
 
 
