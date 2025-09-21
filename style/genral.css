@@ -205,11 +205,11 @@ h3 {
 }
 
 .aboutContent {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1px;
-    place-content: center;
-    place-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -222,6 +222,7 @@ h3 {
     justify-content: center;
     align-items: center;
     padding-bottom: 60px;
+    width: 50%;
 }
 
 .amazingTeacher {
@@ -582,7 +583,6 @@ div.getInTouch {
         justify-content: center;
         align-items: center;
         place-content: center;
-        padding: 0 5px; /*Change Later!*/
     }
 
 
@@ -657,7 +657,7 @@ div.getInTouch {
         
     }
     .about {
-        padding: 0 5px;
+        padding: 0;
         
     }
 
@@ -665,19 +665,16 @@ div.getInTouch {
         font-size: 1.2em;
     }
 
-    .aboutContent { /*Make the things reveresed*/
-        display: grid;
-        grid-template-columns: 1fr;
-        padding-top: 15px;
-        padding-bottom: 15px;
+    .aboutContent {
+        flex-direction: column-reverse;
+        padding-top: 10px;
+        padding-bottom: 20px;
 
     }
 
     .textOrParagraph {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        padding-bottom: 10px;
+        padding-bottom: 0;
+        width: 100%;
     }
 
     
@@ -685,7 +682,69 @@ div.getInTouch {
     .textOrParagraph p {
         font-weight: 300;
         font-size: 0.7em;
-        line-height: 1.5em;
-        
+        line-height: 1.5em;   
+        padding: 10px;     
+    }
+
+    .exanded {
+        padding: 0;
+    }
+
+    .exanded h2 {
+        font-size: 1.2em;
+    }
+
+    .secondcontainer {
+        grid-template-columns: 1fr; 
+        place-items: start; 
+        float: left;
+        gap: 10px; 
+    }
+
+    .work-ex-section {
+        width: 100%; 
+        padding: 0;
+    }
+    .WorkEx, .education {
+        column-gap: 10px;
+        font-size: 1em;
+        vertical-align: middle;
+        padding-bottom: 20px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .educationIcon {
+        color: blue;
+        font-size: 1em;
+    }
+
+    div.infoBox {
+        padding-left: 20px; 
+        margin-bottom: 2rem;
+        left: 0; 
+        margin-left: 10px;
+
+            & .circle {
+                width: 15px; 
+                height: 15px; 
+                left: -8.5px; 
+            }
+            & .workPosition {
+                font-size: 0.8em; 
+            }
+            & .workTitle {
+                line-height: 30px;
+                margin: 0; 
+                font-size: 0.7em; 
+                font-weight: 800;
+                max-width: 94%;
+            }
+            & .aboutWork {
+                font-size: 0.6em; 
+                max-width: 94.5%;
+                & a{
+                    font-weight: 600;
+                }
+            }
     }
 }
