@@ -359,8 +359,11 @@ div.skillsArea {
                 background: rgb(99, 95, 102); 
                 border: 1px solid rgb(66, 63, 70);
                 border-radius: 5px; 
-                padding: 20px;
                 transition: background 0.5s ease, transform 0.5s ease;
+                width: 5em;
+                padding: 1em 0;
+                text-align: center;
+               
             }
             .skill:hover {
                 background: rgb(131, 79, 199);
@@ -585,6 +588,9 @@ div.getInTouch {
         place-content: center;
     }
 
+    * {
+        padding: 0;
+    }
 
     h1 {
         font-size: 1.3em;
@@ -746,5 +752,161 @@ div.getInTouch {
                     font-weight: 600;
                 }
             }
+
     }
+    div.skillsArea {
+    
+        padding: 0;
+        height: auto;
+        margin-bottom: 2em;
+        .skillsContainer {
+            width: 100%;
+            h3 {
+                margin: 1em 0;
+
+                strong {
+                    font-size: 1em;
+                }
+            }
+            
+            .skillSet {
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 0.5em;
+
+                .skillTitle {
+                    strong {
+                        font-size: 1em; 
+                    }
+                }
+                .skill {
+                    background: rgb(131, 79, 199); 
+                }
+                .skill:hover {
+                    transform: scale(1);
+                }
+
+
+            }  
+        }
+    }
+    div.recentProjects {
+        margin-bottom: 2em;  
+        padding: 0 0.5em;
+
+        .projectsContainer {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 3em; 
+
+            .projectBox {
+                width: 100%;  
+                i {
+                    font-size: 1em;
+                }
+                
+                i:hover {
+                    font-size: 1.5em;
+                }                 
+                .projectImage {
+                    height: 100%;
+                }
+                .projectDetails {
+                    padding: 1em 0 1em 0.5em; 
+                    h3 {
+                        font-size: 1em;
+                        text-align: left;
+                        
+                    }
+                    p {
+                        font-size: 0.8em; 
+                    }
+                    button {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+    }
+    /*Get In Touch*/
+
+    div.getInTouch {  
+        padding: 0 0.5em;          
+        div.contactContainer {
+            grid-template-columns: repeat(1, 1fr);
+            place-content: center;
+            row-gap: 1em; 
+
+            .contactInfo {
+                width: 95%;
+                h3 {
+                    font-size: 1em;
+                }
+                p {
+                    font-size: 0.8em;
+                }
+
+
+                div.socialLinks {
+                    a {
+                        margin-bottom: 0.5em;
+                        height: 2em;
+                        border-radius: 5px;
+                        .i {
+                            font-size: 1em;
+                        }
+                        span {
+                            font-size: 0.8em;
+                            font-weight: 500;
+                        }
+                        
+                    }
+                    a:hover {
+                        box-shadow: 0 0 15px var(--button);
+                    }
+                    
+                }
+            }
+            .contactForm {
+                border-radius: 5px; 
+                form {
+                    padding: 1em; 
+                    label {
+                        font-weight: 600; 
+                    }
+                    input {
+                        padding: 0.8em;
+                        margin-bottom: 1em; 
+                        border-radius: 5px; 
+                        font-size: 0.7em;
+                        
+                    }
+                    input:focus {
+                        box-shadow: 0 0 0 1px var(--button);
+                    }
+                    textarea {
+                        padding: 0.8em; 
+                        margin-bottom: 1.4em;
+                        border-radius: 5px;
+                        font-size: 0.8em;
+                        font-style: italic;
+                    }
+                    textarea:focus {
+                        box-shadow: 0 0 0 1px var(--button);
+                    }
+                    button {
+                        padding: 0.8em;
+                        border-radius: 5px;
+                        font-size: 0.8em;
+                    }
+                }
+            }
+            .contactForm:hover {
+                box-shadow: 0 2px 20px var(--button);
+            }
+            
+        }
+    }
+
 }
