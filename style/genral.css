@@ -323,9 +323,7 @@ div.infoBox {
 }
 
 /*NEW THINGS TO ADD!*/
-/* The Things To update */
 div.skillsArea {
-    /* background: #111827; */
 
     height: 450px;
     
@@ -573,7 +571,7 @@ div.getInTouch {
 
 
 /* Responsive ness*/
-@media screen and (min-width: 0px) and (max-width: 320px) {
+@media screen and (min-width: 0px) and (max-width: 360px) {
 
     body {
         align-items: center;
