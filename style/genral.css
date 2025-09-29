@@ -571,7 +571,7 @@ div.getInTouch {
 
 
 /* Responsive ness*/
-@media screen and (min-width: 0px) and (max-width: 380px) {
+@media screen and (min-width: 0px) and (max-width: 400px) {
 
     body {
         align-items: center;
