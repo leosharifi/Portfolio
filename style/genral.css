@@ -571,7 +571,7 @@ div.getInTouch {
 
 
 /* Responsive ness*/
-@media screen and (min-width: 0px) and (max-width: 400px) {
+@media screen and (min-width: 0px) and (max-width: 550px) {
 
     body {
         align-items: center;
@@ -830,7 +830,8 @@ div.getInTouch {
     /*Get In Touch*/
 
     div.getInTouch {  
-        padding: 0 0.5em;          
+        padding: 1em 0.5em; 
+        /* width: 92%;          */
         div.contactContainer {
             grid-template-columns: repeat(1, 1fr);
             place-content: center;
@@ -908,3 +909,4 @@ div.getInTouch {
     }
 
 }
+
