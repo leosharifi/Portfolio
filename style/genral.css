@@ -168,7 +168,7 @@ h3 {
 .scroolBarIcon {
     position: relative;
     width: 40px;
-    height: 120px;
+    height: 100px;
     border: 1px solid var(--paragraph);
     border-radius: 20px;
     margin-top: 10px;
@@ -178,13 +178,28 @@ h3 {
     color: var(--paragraph);
     font-size: 80px;
     font-weight: 900;
+    overflow: hidden; 
 }
 
 .dotScrool {
     position: absolute;
-    top: -30px;
+    top: -45px; 
     margin: 0;
     padding: 0;
+    animation: scrollUpDown 2.5s ease-in-out infinite;
+}
+
+/*animation */
+@keyframes scrollUpDown {
+    0% {
+        top: -45px;
+    }
+    50% {
+        top: calc(20% - 10px); /* go to bottom (adjust 40px to dot size) */
+    }
+    100% {
+        top: -45px;
+    }
 }
 
 .about {
@@ -322,7 +337,6 @@ div.infoBox {
         }
 }
 
-/*NEW THINGS TO ADD!*/
 div.skillsArea {
 
     height: 450px;
@@ -378,7 +392,7 @@ div.recentProjects {
     display: flex;
     flex-direction: column;
     align-items: center;  
-
+    
     .projectsContainer {
         display: grid; 
         grid-template-columns: repeat(3, 1fr);
@@ -465,15 +479,15 @@ div.getInTouch {
     div.contactContainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 2em; /* Change later */
+        column-gap: 2em; 
 
         .contactInfo {
             display: flex;
             flex-direction: column; 
             justify-content: flex-start;
             align-items: flex-start;
-            padding: 10px; /*Change later*/
-            width: 85%; /*Change later*/
+            padding: 10px; 
+            width: 85%; 
 
 
 
@@ -488,7 +502,7 @@ div.getInTouch {
                     align-items: center;
                     column-gap: 0.5em;
                     margin-bottom: 20px;
-                    background: blue; /* Change later */
+                    background: blue; 
                     color: white; 
                     text-decoration: none;
                     padding: 0 1em;
@@ -570,7 +584,344 @@ div.getInTouch {
 
 
 
+
+
+
 /* Responsive ness*/
+
+/*Tablet*/
+
+@media screen and (min-width: 550px) and (max-width: 1290px) {
+
+    h1 {
+        font-size: 2.2em;
+    }
+    .exanded h2 {
+        font-size: 1.5em !important;
+    }
+
+    h3 {
+        font-size: 1.4em !important;
+        width: 90%;
+        text-align: center;
+    }
+
+    
+
+    .ProfilePicture {
+        width: 180px;
+        height: 180px;
+        margin-top: 40px;
+        border-radius: 90px;
+    }
+
+    .icon-dashboard {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+
+    .resumeIcon {
+        width: 35px;
+        height: 35px;
+        border-radius: 18px;
+        padding: 8px;
+        margin-left: 10px;
+    }
+
+    .resume {
+        background-color: #374151;
+        position: absolute;
+        bottom: 65px;
+        padding: 5px 10px;
+        font-size: 0.8em;
+        font-weight: 500;
+        border-radius: 5px;
+        transition: opacity 0.5s ease;
+    }
+
+    .resume::before {
+        top: 24px;
+        left: 18px;
+        border-top: 10px solid #374151;
+        border-bottom:  10px solid transparent;
+    }
+
+  
+
+    
+
+    
+
+    .about {
+        padding: 0;
+        
+    }
+
+    .aboutMe {
+        font-size: 1.5em;
+    }
+
+    .aboutContent {
+        flex-direction: column-reverse;
+        padding-top: 10px;
+        padding-bottom: 20px;
+
+    }
+
+    .textOrParagraph {
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    
+
+    .textOrParagraph p {
+        font-weight: 500;
+        font-size: 1em;
+        padding: 10px;     
+    }
+
+    .exanded {
+        padding: 0;
+    }
+
+    
+
+    .secondcontainer {
+        grid-template-columns: repeat(1, 1fr); 
+        place-items: center; 
+        gap: 10px; 
+    }
+
+    .work-ex-section {
+        width: 100%; 
+        padding: 0;
+    }
+    .WorkEx, .education {
+        column-gap: 1em;
+        font-size: 1.2em !important;
+        padding-bottom: 20px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .educationIcon {
+        color: blue;
+        font-size: 1.2em;
+    }
+
+    div.infoBox {
+        padding-left: 20px; 
+        margin-bottom: 2rem;
+        left: 0; 
+        margin-left: 10px;
+
+            & .circle {
+                width: 15px; 
+                height: 15px; 
+                left: -8.5px; 
+            }
+            & .workPosition {
+                font-size: 1em; 
+            }
+            & .workTitle {
+                line-height: 30px;
+                margin: 0; 
+                font-size: 0.8em; 
+                font-weight: 800;
+                max-width: 94%;
+            }
+            & .aboutWork {
+                font-size: 0.6em; 
+                max-width: 94.5%;
+                & a{
+                    font-weight: 600;
+                }
+            }
+
+    }
+    div.skillsArea {
+    
+        padding: 0;
+        height: auto;
+        margin-bottom: 2em;
+        .skillsContainer {
+            width: 100%;
+            h3 {
+                margin: 1em 0;
+
+                strong {
+                    font-size: 1em;
+                }
+            }
+            
+            .skillSet {
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 0.5em;
+
+                .skillTitle {
+                    strong {
+                        font-size: 1em; 
+                    }
+                }
+                .skill {
+                    background: rgb(131, 79, 199); 
+                }
+                .skill:hover {
+                    transform: scale(1);
+                }
+
+
+            }  
+        }
+    }
+    div.recentProjects {
+        margin-bottom: 2em;  
+        padding: 0 0.5em;
+        .projectsContainer > :last-child:nth-child(odd) {
+            grid-column: span 2;
+        }
+        .projectsContainer {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 2em; 
+
+            .projectBox {
+                width: 100%;  
+                i {
+                    font-size: 1em;
+                }
+                
+                i:hover {
+                    font-size: 1.5em;
+                }                 
+                .projectImage {
+                    height: 100%;
+                }
+                .projectDetails {
+                    padding: 1em 0 1em 0.5em; 
+                    h3 {
+                        font-size: 0.8em;
+                        text-align: left;
+                        
+                    }
+                    p {
+                        font-size: 0.8em; 
+                    }
+                    button {
+                        font-size: 0.5em;
+                    }
+                }
+            }
+        }
+    }
+    /*Get In Touch*/
+
+    div.getInTouch {  
+        padding: 1em 0.5em; 
+       
+                 
+        div.contactContainer {
+            grid-template-columns: repeat(2, 1fr);
+            place-content: center;
+            row-gap: 1em;
+            
+
+            .contactInfo {
+                width: 95%;
+                h3 {
+                    font-size: 1em;
+                }
+                p {
+                    font-size: 0.8em;
+                }
+
+
+                div.socialLinks {
+                    a {
+                        margin-bottom: 0.5em;
+                        height: 2em;
+                        border-radius: 5px;
+                        .i {
+                            font-size: 1em;
+                        }
+                        span {
+                            font-size: 0.8em;
+                            font-weight: 500;
+                        }
+                        
+                    }
+                    a:hover {
+                        box-shadow: 0 0 15px var(--button);
+                    }
+                    
+                }
+            }
+            .contactForm {
+                border-radius: 5px; 
+                form {
+                    padding: 1em; 
+                    label {
+                        font-weight: 600; 
+                    }
+                    input {
+                        padding: 0.8em;
+                        margin-bottom: 1em; 
+                        border-radius: 5px; 
+                        font-size: 0.7em;
+                        
+                    }
+                    input:focus {
+                        box-shadow: 0 0 0 1px var(--button);
+                    }
+                    textarea {
+                        padding: 0.8em; 
+                        margin-bottom: 1.4em;
+                        border-radius: 5px;
+                        font-size: 0.8em;
+                        font-style: italic;
+                    }
+                    textarea:focus {
+                        box-shadow: 0 0 0 1px var(--button);
+                    }
+                    button {
+                        padding: 0.8em;
+                        border-radius: 5px;
+                        font-size: 0.8em;
+                    }
+                }
+            }
+            .contactForm:hover {
+                box-shadow: 0 2px 20px var(--button);
+            }
+            
+        }
+    }
+
+}
+
+
+/*Odd Stuff*/
+@media screen and (min-width: 950px) and (max-width: 1290px) {
+
+    .secondcontainer {
+        grid-template-columns: repeat(2, 1fr) !important; 
+    }
+    .projectsContainer > :last-child:nth-child(odd) {
+        grid-column: span 1 !important;
+    }
+    .projectsContainer {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+   
+   
+}
+
+
+/*Mobile*/
 @media screen and (min-width: 0px) and (max-width: 550px) {
 
     body {
@@ -654,12 +1005,7 @@ div.getInTouch {
     }
 
 
-    .scroolBarIcon {
-        width: 30px;
-        height: 100px;
-        font-size: 70px;
-        
-    }
+    
     .about {
         padding: 0;
         
@@ -909,4 +1255,5 @@ div.getInTouch {
     }
 
 }
+
 
