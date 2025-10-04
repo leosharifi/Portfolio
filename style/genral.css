@@ -97,7 +97,23 @@ h3 {
     object-fit: cover;
     margin-top: 50px;
     border-radius: 150px;
-    box-shadow: 0 0 80px var(--button);
+    box-shadow: 0 2px 80px #00ffff;
+    animation: shadowColor 6s ease-in-out infinite;
+}
+@keyframes shadowColor{
+    0% {
+        box-shadow: 0 2px 80px #00ffff;
+    }
+    33% {
+        box-shadow: 0 2px 80px #9b5de5;
+    }
+    66% {
+        box-shadow: 0 2px 80px #f15bb5;
+    }
+    
+    100% {
+        box-shadow: 0 2px 80px #00ffff;
+    }
 }
 
 .icon-dashboard {
