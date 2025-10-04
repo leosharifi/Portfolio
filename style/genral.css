@@ -98,7 +98,7 @@ h3 {
     margin-top: 50px;
     border-radius: 150px;
     box-shadow: 0 2px 80px #00ffff;
-    animation: shadowColor 6s ease-in-out infinite;
+    animation: shadowColor 5s ease-in-out infinite;
 }
 @keyframes shadowColor{
     0% {
