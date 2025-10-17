@@ -248,7 +248,7 @@ h3 {
 }
 
 .textOrParagraph {
-    color: var(--paragraph);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -749,7 +749,7 @@ div.getInTouch {
                 max-width: 94%;
             }
             & .aboutWork {
-                font-size: 0.6em; 
+                font-size: 1em; 
                 max-width: 94.5%;
                 & a{
                     font-weight: 600;
@@ -758,7 +758,6 @@ div.getInTouch {
 
     }
     div.skillsArea {
-    
         padding: 0;
         height: auto;
         margin-bottom: 2em;
