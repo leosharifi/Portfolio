@@ -1,49 +1,52 @@
 :root {
-    --background:     #0f0e17;
-    --headline:       #fffffe;
-    --paragraph:      #a7a9be;
+    --background: #0f0e17;
+    --headline: #fffffe;
+    --paragraph: #a7a9be;
     --cardBackground: #fffffe;
-    --cradHeadline:   #0f0e17;
-    --cardParagraph:  #2e2f3e;
-    --cardtagback:    #ff8906;
-    --cardtagtext:    #fffffe;
-    --cardhighlit:    #e53170;
-    --button:         #ff8906; 
-    --buttonText:     #fffffe;
-    --border:         #0f0e17;
-    --highlights:     #ff8906;
-    --backgroundHover: radial-gradient(circle,#f25f4c , #ff8906, #e53170);
+    --cradHeadline: #0f0e17;
+    --cardParagraph: #2e2f3e;
+    --cardtagback: #ff8906;
+    --cardtagtext: #fffffe;
+    --cardhighlit: #e53170;
+    --button: #ff8906;
+    --buttonText: #fffffe;
+    --border: #0f0e17;
+    --highlights: #ff8906;
+    --backgroundHover: radial-gradient(circle, #f25f4c, #ff8906, #e53170);
 }
 
 @media screen and (prefer-color-scheme: light) {
     :root {
-        --background:     #fffffe;
-        --headline:       #0f0e17;
-        --paragraph:      #2e2f3e;
+        --background: #fffffe;
+        --headline: #0f0e17;
+        --paragraph: #2e2f3e;
         --cardBackground: #0f0e17;
-        --cradHeadline:   #fffffe;
-        --cardParagraph:  #a7a9be;
-        --cardtagback:    #ff8906;
-        --cardtagtext:    #fffffe;
-        --cardhighlit:    #e53170;
-        --button:         #ff8906; 
-        --buttonText:     #fffffe;
-        --border:         #fffffe;
-        --highlights:     #ff8906;
-        --backgroundHover: radial-gradient(circle,#f25f4c , #ff8906, #e53170);
+        --cradHeadline: #fffffe;
+        --cardParagraph: #a7a9be;
+        --cardtagback: #ff8906;
+        --cardtagtext: #fffffe;
+        --cardhighlit: #e53170;
+        --button: #ff8906;
+        --buttonText: #fffffe;
+        --border: #fffffe;
+        --highlights: #ff8906;
+        --backgroundHover: radial-gradient(circle, #f25f4c, #ff8906, #e53170);
     }
 }
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-size: 16px;
 }
+
 body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
+
 video.background {
     position: fixed;
     min-width: 100%;
@@ -51,12 +54,12 @@ video.background {
     object-fit: cover;
     z-index: -1;
 }
-  
+
 main {
     display: grid;
     grid-template-columns: 1fr;
     padding: 0 30px 10px 0;
-    
+
 }
 
 h1 {
@@ -84,7 +87,7 @@ h3 {
     position: relative;
     width: 100%;
 }
-  
+
 .firstContainer {
     display: flex;
     flex-direction: column;
@@ -100,17 +103,20 @@ h3 {
     box-shadow: 0 2px 80px #00ffff;
     animation: shadowColor 5s ease-in-out infinite;
 }
-@keyframes shadowColor{
+
+@keyframes shadowColor {
     0% {
         box-shadow: 0 2px 80px #00ffff;
     }
+
     33% {
         box-shadow: 0 2px 80px #9b5de5;
     }
+
     66% {
         box-shadow: 0 2px 80px #f15bb5;
     }
-    
+
     100% {
         box-shadow: 0 2px 80px #00ffff;
     }
@@ -177,7 +183,7 @@ h3 {
     box-shadow: 0 0 30px var(--button);
 }
 
-.tooltipIcon:hover .resume{
+.tooltipIcon:hover .resume {
     opacity: 1;
 }
 
@@ -194,12 +200,12 @@ h3 {
     color: var(--paragraph);
     font-size: 80px;
     font-weight: 900;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .dotScrool {
     position: absolute;
-    top: -45px; 
+    top: -45px;
     margin: 0;
     padding: 0;
     animation: scrollUpDown 2.5s ease-in-out infinite;
@@ -210,9 +216,12 @@ h3 {
     0% {
         top: -45px;
     }
+
     50% {
-        top: calc(20% - 10px); /* go to bottom (adjust 40px to dot size) */
+        top: calc(20% - 10px);
+        /* go to bottom (adjust 40px to dot size) */
     }
+
     100% {
         top: -45px;
     }
@@ -278,8 +287,8 @@ h3 {
     /* background: #111827; */
     display: flex;
     justify-content: center;
-    flex-direction: column;    
-    height: max-content;     
+    flex-direction: column;
+    height: max-content;
 }
 
 .exanded h2 {
@@ -291,79 +300,86 @@ h3 {
 }
 
 .secondcontainer {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    place-items: center; 
-    column-gap: 10px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    column-gap: 10px;
 }
 
 .work-ex-section {
-    width: 600px; 
+    width: 600px;
     align-self: flex-start;
     padding: 10px;
 }
-.WorkEx, .education {
-    column-gap: 10px; 
+
+.WorkEx,
+.education {
+    column-gap: 10px;
     font-size: 25px;
     font-weight: 400;
     padding-bottom: 30px;
 }
+
 .educationIcon {
     color: blue;
     font-size: 25px;
 }
 
 div.infoBox {
-    padding-left: 25px; 
+    padding-left: 25px;
     padding-bottom: 1px;
     margin-bottom: 2rem;
-    position: relative; 
-    left: -10px; 
+    position: relative;
+    left: -10px;
     border-left: 3px solid rgb(79 70 229 / 0.2);
 
-        & .circle {
-            width: 20px; 
-            height: 20px; 
-            background: #4F46E5; 
-            border-radius: 10px;
-            position: absolute; 
-            left: -12px; 
+    & .circle {
+        width: 20px;
+        height: 20px;
+        background: #4F46E5;
+        border-radius: 10px;
+        position: absolute;
+        left: -12px;
+    }
+
+    & .workPosition {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 700;
+        color: #F9FAFB;
+    }
+
+    & .workTitle {
+        color: #4F46E5;
+        line-height: 35px;
+        margin: 3px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    & .aboutWork {
+        font-size: 18px;
+        color: #4B4563;
+
+        & a {
+            color: rgb(23, 23, 218);
+            text-decoration: none;
+            font-weight: 600;
         }
-        & .workPosition {
-            margin: 0; 
-            font-size: 18px; 
-            font-weight: 700;
-            color: #F9FAFB;
-        }
-        & .workTitle {
-            color: #4F46E5; 
-            line-height: 35px;
-            margin: 3px; 
-            font-size: 20px; 
-            font-weight: 500;
-        }
-        & .aboutWork {
-            font-size: 18px; 
-            color: #4B4563; 
-            & a{
-                color: rgb(23, 23, 218);
-                text-decoration: none;
-                font-weight: 600;
-            }
-        }
+    }
 }
 
 div.skillsArea {
 
     height: 450px;
-    
+
     .skillsContainer {
         display: flex;
         align-items: center;
         flex-direction: column;
 
         h3 {
-            margin: 0; 
+            margin: 0;
             padding: 0;
 
             strong {
@@ -372,27 +388,28 @@ div.skillsArea {
                 margin-bottom: 10px;
             }
         }
-        
+
         .skillSet {
             padding: 20px;
-            display: flex; 
-            flex-direction: row; 
+            display: flex;
+            flex-direction: row;
             gap: 30px;
 
             h3 strong {
-                font-size: 20px;    
+                font-size: 20px;
             }
 
             .skill {
-                background: rgb(99, 95, 102); 
+                background: rgb(99, 95, 102);
                 border: 1px solid rgb(66, 63, 70);
-                border-radius: 5px; 
+                border-radius: 5px;
                 transition: background 0.5s ease, transform 0.5s ease;
                 width: 5em;
                 padding: 1em 0;
                 text-align: center;
-               
+
             }
+
             .skill:hover {
                 background: rgb(131, 79, 199);
                 cursor: pointer;
@@ -400,80 +417,88 @@ div.skillsArea {
             }
 
 
-        }  
+        }
     }
 }
 
 div.recentProjects {
     display: flex;
     flex-direction: column;
-    align-items: center;  
-    
+    align-items: center;
+
     .projectsContainer {
-        display: grid; 
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 50px; 
-        padding-top: 3em; 
+        grid-gap: 50px;
+        padding-top: 3em;
 
         .projectBox {
             border-radius: 10px;
-            width: 26em;  
-            transition: box-shadow 0.5s ease; 
+            width: 26em;
+            transition: box-shadow 0.5s ease;
             display: flex;
             flex-direction: column;
             position: relative;
             background: var(--background);
+
             i {
                 position: absolute;
                 top: 15px;
                 right: 15px;
                 font-size: 2em;
                 opacity: 0;
-                transition: font-size 0.3s ease-in, opacity 0.3s ease-in; 
+                transition: font-size 0.3s ease-in, opacity 0.3s ease-in;
             }
+
             &:hover i {
                 opacity: 1;
-            }  
+            }
+
             i:hover {
                 font-size: 2.5em;
-            }                 
+            }
+
             .projectImage {
                 width: 100%;
                 height: 65%;
-                
-            
+
+
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    border-top-left-radius: 10px; 
+                    border-top-left-radius: 10px;
                     border-top-right-radius: 10px;
                 }
             }
+
             .projectDetails {
-                padding: 20px 20px 10px 20px; 
+                padding: 20px 20px 10px 20px;
 
                 h3 {
-                    font-size: 1.4em; 
+                    font-size: 1.4em;
                     font-weight: 350;
                 }
+
                 p {
-                    margin: 1em 0; 
-                    font-size: 1em; 
+                    margin: 1em 0;
+                    font-size: 1em;
                     width: 85%;
                     color: gray;
                 }
+
                 button {
                     cursor: text;
                     background: #4F46E51A;
                     border: none;
                     padding: 10px;
-                    border-radius: 100px; 
+                    border-radius: 100px;
                     color: blue;
                     font-size: 12px;
                 }
             }
         }
+
         .projectBox:hover {
             box-shadow: 0 2px 40px var(--button);
         }
@@ -489,28 +514,31 @@ div.getInTouch {
     flex-direction: column;
 
     h3 {
-        font-size: 1.4em; /*Change later*/
-        font-weight: 350; /*Change later*/
+        font-size: 1.4em;
+        /*Change later*/
+        font-weight: 350;
+        /*Change later*/
     }
+
     div.contactContainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 2em; 
+        column-gap: 2em;
 
         .contactInfo {
             display: flex;
-            flex-direction: column; 
+            flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            padding: 10px; 
-            width: 85%; 
+            padding: 10px;
+            width: 85%;
 
 
 
             div.socialLinks {
                 display: flex;
                 flex-direction: column;
-                width: 100%; 
+                width: 100%;
                 padding: 1em 0;
 
                 a {
@@ -518,72 +546,96 @@ div.getInTouch {
                     align-items: center;
                     column-gap: 0.5em;
                     margin-bottom: 20px;
-                    background: blue; 
-                    color: white; 
+                    background: blue;
+                    color: white;
                     text-decoration: none;
                     padding: 0 1em;
                     height: 60px;
                     border-radius: 10px;
                     transition: box-shadow 0.5s ease;
+
                     .i {
                         font-size: 1.5em;
                         font-weight: 500;
                     }
+
                     span {
                         font-size: 1em;
                         font-weight: 800;
                     }
-                    
+
                 }
+
                 a:hover {
                     box-shadow: 0 0 40px var(--button);
                 }
-                
+
             }
         }
+
         .contactForm {
-            background: var(--background); /* Change later */
-            border-radius: 10px; /* Change later */
+            background: var(--background);
+            /* Change later */
+            border-radius: 10px;
+            /* Change later */
             transition: box-shadow 0.5s ease;
+
             form {
                 display: flex;
                 flex-direction: column;
-                padding: 2em; /* Change later */
+                padding: 2em;
+
+                /* Change later */
                 label {
-                    margin-bottom: 0.5em; /* Change later */
-                    font-weight: 800;  /* Change later */
+                    margin-bottom: 0.5em;
+                    /* Change later */
+                    font-weight: 800;
+                    /* Change later */
                     color: #D1D5DB;
                 }
+
                 input {
-                    padding: 15px; /* change later */
-                    margin-bottom: 30px; /* change later */
-                    border-radius: 10px; /* change later */
+                    padding: 15px;
+                    /* change later */
+                    margin-bottom: 30px;
+                    /* change later */
+                    border-radius: 10px;
+                    /* change later */
                     border: none;
                     background: #374151;
                     color: white;
                     font-size: 15px;
                 }
+
                 input:focus {
                     outline: none;
                     box-shadow: 0 0 0 2px var(--button);
                 }
+
                 textarea {
-                    padding: 15px; /* change later */
-                    margin-bottom: 30px; /* change later */
-                    border-radius: 10px; /* change later */
+                    padding: 15px;
+                    /* change later */
+                    margin-bottom: 30px;
+                    /* change later */
+                    border-radius: 10px;
+                    /* change later */
                     border: none;
                     background: #374151;
                     color: white;
                     font-size: 15px;
                 }
+
                 textarea:focus {
                     outline: none;
                     box-shadow: 0 0 0 2px var(--button);
                 }
+
                 button {
                     cursor: pointer;
-                    padding: 15px; /* change later */
-                    border-radius: 10px; /* change later */
+                    padding: 15px;
+                    /* change later */
+                    border-radius: 10px;
+                    /* change later */
                     border: none;
                     background: blue;
                     color: white;
@@ -591,10 +643,11 @@ div.getInTouch {
                 }
             }
         }
+
         .contactForm:hover {
             box-shadow: 0 2px 40px var(--button);
         }
-        
+
     }
 }
 
@@ -612,6 +665,7 @@ div.getInTouch {
     h1 {
         font-size: 2.2em;
     }
+
     .exanded h2 {
         font-size: 1.5em !important;
     }
@@ -622,7 +676,7 @@ div.getInTouch {
         text-align: center;
     }
 
-    
+
 
     .ProfilePicture {
         width: 180px;
@@ -636,7 +690,7 @@ div.getInTouch {
         flex-wrap: wrap;
     }
 
-    
+
 
     .resumeIcon {
         width: 35px;
@@ -661,18 +715,18 @@ div.getInTouch {
         top: 24px;
         left: 18px;
         border-top: 10px solid #374151;
-        border-bottom:  10px solid transparent;
+        border-bottom: 10px solid transparent;
     }
 
-  
 
-    
 
-    
+
+
+
 
     .about {
         padding: 0;
-        
+
     }
 
     .aboutMe {
@@ -691,78 +745,88 @@ div.getInTouch {
         width: 100%;
     }
 
-    
+
 
     .textOrParagraph p {
         font-weight: 500;
         font-size: 1em;
-        padding: 10px;     
+        padding: 10px;
     }
 
     .exanded {
         padding: 0;
     }
 
-    
+
 
     .secondcontainer {
-        grid-template-columns: repeat(1, 1fr); 
-        place-items: center; 
-        gap: 10px; 
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        gap: 10px;
     }
 
     .work-ex-section {
-        width: 100%; 
+        width: 100%;
         padding: 0;
     }
-    .WorkEx, .education {
+
+    .WorkEx,
+    .education {
         column-gap: 1em;
         font-size: 1.2em !important;
         padding-bottom: 20px;
         text-align: left;
         margin-left: 10px;
     }
+
     .educationIcon {
         color: blue;
         font-size: 1.2em;
     }
 
     div.infoBox {
-        padding-left: 20px; 
+        padding-left: 20px;
         margin-bottom: 2rem;
-        left: 0; 
+        left: 0;
         margin-left: 10px;
 
-            & .circle {
-                width: 15px; 
-                height: 15px; 
-                left: -8.5px; 
+        & .circle {
+            width: 15px;
+            height: 15px;
+            left: -8.5px;
+        }
+
+        & .workPosition {
+            font-size: 1em;
+        }
+
+        & .workTitle {
+            line-height: 30px;
+            margin: 0;
+            font-size: 0.8em;
+            font-weight: 800;
+            max-width: 94%;
+        }
+
+        & .aboutWork {
+            font-size: 1em;
+            max-width: 94.5%;
+
+            & a {
+                font-weight: 600;
             }
-            & .workPosition {
-                font-size: 1em; 
-            }
-            & .workTitle {
-                line-height: 30px;
-                margin: 0; 
-                font-size: 0.8em; 
-                font-weight: 800;
-                max-width: 94%;
-            }
-            & .aboutWork {
-                font-size: 1em; 
-                max-width: 94.5%;
-                & a{
-                    font-weight: 600;
-                }
-            }
+        }
 
     }
+
     div.skillsArea {
         padding: 0;
         height: auto;
         margin-bottom: 2em;
+
         .skillsContainer {
             width: 100%;
+
             h3 {
                 margin: 1em 0;
 
@@ -770,62 +834,79 @@ div.getInTouch {
                     font-size: 1em;
                 }
             }
-            
+
+            /* Skill Grid */
             .skillSet {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(120px, auto));
+                gap: 0.7em;
                 padding: 0;
                 justify-content: center;
                 align-items: center;
-                flex-wrap: wrap;
-                gap: 0.5em;
 
-                .skillTitle {
-                    strong {
-                        font-size: 1em; 
+                .skill {
+                    background: rgb(131, 79, 199);
+                    color: #fff;
+                    padding: 10px 14px;
+                    border-radius: 8px;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 0.9rem;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    transition: 0.25s ease-in-out;
+                    cursor: default;
+
+                    &:hover {
+                        background: #000;
+                        color: #fff;
+                        transform: translateY(-4px);
+                        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
                     }
                 }
-                .skill {
-                    background: rgb(131, 79, 199); 
-                }
-                .skill:hover {
-                    transform: scale(1);
-                }
-
-
-            }  
+            }
         }
     }
+
     div.recentProjects {
-        margin-bottom: 2em;  
+        margin-bottom: 2em;
         padding: 0 0.5em;
-        .projectsContainer > :last-child:nth-child(odd) {
+
+        .projectsContainer> :last-child:nth-child(odd) {
             grid-column: span 2;
         }
+
         .projectsContainer {
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 2em; 
+            grid-gap: 2em;
 
             .projectBox {
-                width: 100%;  
+                width: 100%;
+
                 i {
                     font-size: 1em;
                 }
-                
+
                 i:hover {
                     font-size: 1.5em;
-                }                 
+                }
+
                 .projectImage {
                     height: 100%;
                 }
+
                 .projectDetails {
-                    padding: 1em 0 1em 0.5em; 
+                    padding: 1em 0 1em 0.5em;
+
                     h3 {
                         font-size: 0.8em;
                         text-align: left;
-                        
+
                     }
+
                     p {
-                        font-size: 0.8em; 
+                        font-size: 0.8em;
                     }
+
                     button {
                         font-size: 0.5em;
                     }
@@ -833,23 +914,26 @@ div.getInTouch {
             }
         }
     }
+
     /*Get In Touch*/
 
-    div.getInTouch {  
-        padding: 1em 0.5em; 
-       
-                 
+    div.getInTouch {
+        padding: 1em 0.5em;
+
+
         div.contactContainer {
             grid-template-columns: repeat(2, 1fr);
             place-content: center;
             row-gap: 1em;
-            
+
 
             .contactInfo {
                 width: 95%;
+
                 h3 {
                     font-size: 1em;
                 }
+
                 p {
                     font-size: 0.8em;
                 }
@@ -860,48 +944,59 @@ div.getInTouch {
                         margin-bottom: 0.5em;
                         height: 2em;
                         border-radius: 5px;
+
                         .i {
                             font-size: 1em;
                         }
+
                         span {
                             font-size: 0.8em;
                             font-weight: 500;
                         }
-                        
+
                     }
+
                     a:hover {
                         box-shadow: 0 0 15px var(--button);
                     }
-                    
+
                 }
             }
+
             .contactForm {
-                border-radius: 5px; 
+                border-radius: 5px;
+
                 form {
-                    padding: 1em; 
+                    padding: 1em;
+
                     label {
-                        font-weight: 600; 
+                        font-weight: 600;
                     }
+
                     input {
                         padding: 0.8em;
-                        margin-bottom: 1em; 
-                        border-radius: 5px; 
+                        margin-bottom: 1em;
+                        border-radius: 5px;
                         font-size: 0.7em;
-                        
+
                     }
+
                     input:focus {
                         box-shadow: 0 0 0 1px var(--button);
                     }
+
                     textarea {
-                        padding: 0.8em; 
+                        padding: 0.8em;
                         margin-bottom: 1.4em;
                         border-radius: 5px;
                         font-size: 0.8em;
                         font-style: italic;
                     }
+
                     textarea:focus {
                         box-shadow: 0 0 0 1px var(--button);
                     }
+
                     button {
                         padding: 0.8em;
                         border-radius: 5px;
@@ -909,10 +1004,11 @@ div.getInTouch {
                     }
                 }
             }
+
             .contactForm:hover {
                 box-shadow: 0 2px 20px var(--button);
             }
-            
+
         }
     }
 
@@ -923,16 +1019,18 @@ div.getInTouch {
 @media screen and (min-width: 950px) and (max-width: 1290px) {
 
     .secondcontainer {
-        grid-template-columns: repeat(2, 1fr) !important; 
+        grid-template-columns: repeat(2, 1fr) !important;
     }
-    .projectsContainer > :last-child:nth-child(odd) {
+
+    .projectsContainer> :last-child:nth-child(odd) {
         grid-column: span 1 !important;
     }
+
     .projectsContainer {
         grid-template-columns: repeat(3, 1fr) !important;
     }
-   
-   
+
+
 }
 
 
@@ -942,9 +1040,9 @@ div.getInTouch {
     body {
         align-items: center;
         justify-content: center;
-        
+
     }
-  
+
     main {
         display: flex;
         justify-content: center;
@@ -959,6 +1057,7 @@ div.getInTouch {
     h1 {
         font-size: 1.3em;
     }
+
     .exanded h2 {
         font-size: 1.2em;
     }
@@ -969,7 +1068,7 @@ div.getInTouch {
         text-align: center;
     }
 
-    
+
 
     .ProfilePicture {
         width: 145px;
@@ -983,11 +1082,11 @@ div.getInTouch {
         flex-wrap: wrap;
     }
 
-    
+
 
     .resumeIcon {
         width: 20px;
-        height:20px;
+        height: 20px;
         border-radius: 5px;
         padding: 8px;
         margin-left: 10px;
@@ -1012,7 +1111,7 @@ div.getInTouch {
         height: 0;
         width: 0;
         border-top: 8px solid #374151;
-        border-bottom:  8px solid transparent;
+        border-bottom: 8px solid transparent;
     }
 
     .resumeIcon:hover {
@@ -1020,10 +1119,10 @@ div.getInTouch {
     }
 
 
-    
+
     .about {
         padding: 0;
-        
+
     }
 
     .aboutMe {
@@ -1042,13 +1141,13 @@ div.getInTouch {
         width: 100%;
     }
 
-    
+
 
     .textOrParagraph p {
         font-weight: 300;
         font-size: 0.7em;
-        line-height: 1.5em;   
-        padding: 10px;     
+        line-height: 1.5em;
+        padding: 10px;
     }
 
     .exanded {
@@ -1060,17 +1159,19 @@ div.getInTouch {
     }
 
     .secondcontainer {
-        grid-template-columns: 1fr; 
-        place-items: start; 
+        grid-template-columns: 1fr;
+        place-items: start;
         float: left;
-        gap: 10px; 
+        gap: 10px;
     }
 
     .work-ex-section {
-        width: 100%; 
+        width: 100%;
         padding: 0;
     }
-    .WorkEx, .education {
+
+    .WorkEx,
+    .education {
         column-gap: 10px;
         font-size: 1em;
         vertical-align: middle;
@@ -1078,48 +1179,56 @@ div.getInTouch {
         text-align: left;
         margin-left: 10px;
     }
+
     .educationIcon {
         color: blue;
         font-size: 1em;
     }
 
     div.infoBox {
-        padding-left: 20px; 
+        padding-left: 20px;
         margin-bottom: 2rem;
-        left: 0; 
+        left: 0;
         margin-left: 10px;
 
-            & .circle {
-                width: 15px; 
-                height: 15px; 
-                left: -8.5px; 
+        & .circle {
+            width: 15px;
+            height: 15px;
+            left: -8.5px;
+        }
+
+        & .workPosition {
+            font-size: 0.8em;
+        }
+
+        & .workTitle {
+            line-height: 30px;
+            margin: 0;
+            font-size: 0.7em;
+            font-weight: 800;
+            max-width: 94%;
+        }
+
+        & .aboutWork {
+            font-size: 0.6em;
+            max-width: 94.5%;
+
+            & a {
+                font-weight: 600;
             }
-            & .workPosition {
-                font-size: 0.8em; 
-            }
-            & .workTitle {
-                line-height: 30px;
-                margin: 0; 
-                font-size: 0.7em; 
-                font-weight: 800;
-                max-width: 94%;
-            }
-            & .aboutWork {
-                font-size: 0.6em; 
-                max-width: 94.5%;
-                & a{
-                    font-weight: 600;
-                }
-            }
+        }
 
     }
+
     div.skillsArea {
-    
+
         padding: 0;
         height: auto;
         margin-bottom: 2em;
+
         .skillsContainer {
             width: 100%;
+
             h3 {
                 margin: 1em 0;
 
@@ -1127,7 +1236,7 @@ div.getInTouch {
                     font-size: 1em;
                 }
             }
-            
+
             .skillSet {
                 padding: 0;
                 justify-content: center;
@@ -1137,50 +1246,59 @@ div.getInTouch {
 
                 .skillTitle {
                     strong {
-                        font-size: 1em; 
+                        font-size: 1em;
                     }
                 }
+
                 .skill {
-                    background: rgb(131, 79, 199); 
+                    background: rgb(131, 79, 199);
                 }
+
                 .skill:hover {
                     transform: scale(1);
                 }
 
 
-            }  
+            }
         }
     }
+
     div.recentProjects {
-        margin-bottom: 2em;  
+        margin-bottom: 2em;
         padding: 0 0.5em;
 
         .projectsContainer {
             grid-template-columns: repeat(1, 1fr);
-            grid-gap: 3em; 
+            grid-gap: 3em;
 
             .projectBox {
-                width: 100%;  
+                width: 100%;
+
                 i {
                     font-size: 1em;
                 }
-                
+
                 i:hover {
                     font-size: 1.5em;
-                }                 
+                }
+
                 .projectImage {
                     height: 100%;
                 }
+
                 .projectDetails {
-                    padding: 1em 0 1em 0.5em; 
+                    padding: 1em 0 1em 0.5em;
+
                     h3 {
                         font-size: 1em;
                         text-align: left;
-                        
+
                     }
+
                     p {
-                        font-size: 0.8em; 
+                        font-size: 0.8em;
                     }
+
                     button {
                         font-size: 0.8em;
                     }
@@ -1188,21 +1306,25 @@ div.getInTouch {
             }
         }
     }
+
     /*Get In Touch*/
 
-    div.getInTouch {  
-        padding: 1em 0.5em; 
+    div.getInTouch {
+        padding: 1em 0.5em;
+
         /* width: 92%;          */
         div.contactContainer {
             grid-template-columns: repeat(1, 1fr);
             place-content: center;
-            row-gap: 1em; 
+            row-gap: 1em;
 
             .contactInfo {
                 width: 95%;
+
                 h3 {
                     font-size: 1em;
                 }
+
                 p {
                     font-size: 0.8em;
                 }
@@ -1213,48 +1335,59 @@ div.getInTouch {
                         margin-bottom: 0.5em;
                         height: 2em;
                         border-radius: 5px;
+
                         .i {
                             font-size: 1em;
                         }
+
                         span {
                             font-size: 0.8em;
                             font-weight: 500;
                         }
-                        
+
                     }
+
                     a:hover {
                         box-shadow: 0 0 15px var(--button);
                     }
-                    
+
                 }
             }
+
             .contactForm {
-                border-radius: 5px; 
+                border-radius: 5px;
+
                 form {
-                    padding: 1em; 
+                    padding: 1em;
+
                     label {
-                        font-weight: 600; 
+                        font-weight: 600;
                     }
+
                     input {
                         padding: 0.8em;
-                        margin-bottom: 1em; 
-                        border-radius: 5px; 
+                        margin-bottom: 1em;
+                        border-radius: 5px;
                         font-size: 0.7em;
-                        
+
                     }
+
                     input:focus {
                         box-shadow: 0 0 0 1px var(--button);
                     }
+
                     textarea {
-                        padding: 0.8em; 
+                        padding: 0.8em;
                         margin-bottom: 1.4em;
                         border-radius: 5px;
                         font-size: 0.8em;
                         font-style: italic;
                     }
+
                     textarea:focus {
                         box-shadow: 0 0 0 1px var(--button);
                     }
+
                     button {
                         padding: 0.8em;
                         border-radius: 5px;
@@ -1262,13 +1395,12 @@ div.getInTouch {
                     }
                 }
             }
+
             .contactForm:hover {
                 box-shadow: 0 2px 20px var(--button);
             }
-            
+
         }
     }
 
 }
-
-
