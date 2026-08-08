@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Portfolio Icon-->
-    <link rel="shortcut icon" href="img/myProfile.png" image/portfolioIcon>
+    <link rel="icon" type="image/png" href="img/myProfile.png">
+    <link rel="apple-touch-icon" href="img/myProfile.png">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Arbutus&family=Diplomata+SC&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Miltonian&family=Noto+Sans+Wancho&family=Paprika&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
@@ -20,41 +21,88 @@
             <source src="background/ScienceParticlesOverlayFullHD4KQualityCC0-ezgif.com-gif-to-mp4-converter.mp4" type="video/mp4">
               Your browser does not support the video tag.
         </video>
+        <header class="site-header">
+            <a href="#" class="brand" aria-label="Elyas Sharifi portfolio home">
+                <img class="brand-mark" src="img/myProfile.png" alt="Elyas Sharifi">
+                <span>Elyas Sharifi</span>
+            </a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
         <main>
             <div class="firstContainer">
-                <img src="img/myProfile.png" alt="My Profile" class="ProfilePicture">
-                <h1>Hi, I'm Elyas</h1>
-                <h3>Your Next Web Creater, Hire Me!</h3>
-                <div class="icon-dashboard">
-                    <div class="tooltipIcon">
-                        <a href="My Resume/Elyas Sharifi Resume.pdf" target="_blank">
-                            <img src="img/resumeIcon.webp" alt="resume" class="resumeIcon">
-                        </a>
-                        <span class="resume">Resume</span>
+                <div class="hero-copy">
+                    <p class="eyebrow">Software engineer • Front-end developer • Product Manager</p>
+                    <h1>I build fast, modern web interfaces that feel <span class="highlight">effortless to use</span>.</h1>
+                    <h3>I'm Elyas Sharifi, a front-end software engineer focused on responsive UI, performance, accessibility, clean code, and user-friendly web apps.</h3>
+                    <div class="hero-meta-panel">
+                        <div class="hero-actions">
+                            <a class="btn primary" href="#projects"><i class="fa-solid fa-layer-group"></i> View Projects</a>
+                            <a class="btn ghost" href="My Resume/Elyas Sharifi Resume.pdf" target="_blank"><i class="fa-regular fa-file-lines"></i> Resume</a>
+                        </div>
+                        <div class="hero-stats" aria-label="Portfolio highlights">
+                            <div class="stat">
+                                <strong>7+</strong>
+                                <span>Featured projects</span>
+                            </div>
+                            <div class="stat">
+                                <strong>2025</strong>
+                                <span>Current software engineer</span>
+                            </div>
+                            <div class="stat">
+                                <strong>4+ Years</strong>
+                                <span>Front-end experience</span>
+                            </div>
+                        </div>
+                        <div class="icon-dashboard">
+                            <div class="tooltipIcon">
+                                <a href="My Resume/Elyas Sharifi Resume.pdf" target="_blank" aria-label="Open resume" class="socialIcon">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                </a>
+                                <span class="resume">Resume</span>
+                            </div>
+                            <div class="tooltipIcon">
+                                <a href="https://x.com/leosharifi" target="_blank" aria-label="Open Twitter profile" class="socialIcon">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                                <span class="resume">Twitter</span>
+                            </div>
+                            <div class="tooltipIcon">
+                                <a href="https://github.com/leosharifi" target="_blank" aria-label="Open GitHub profile" class="socialIcon">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <span class="resume">GitHub</span>
+                            </div>
+                            <div class="tooltipIcon">
+                                <a href="https://discord.com/users/1420327753500328036" target="_blank" aria-label="Open Discord profile" class="socialIcon">
+                                    <i class="fa-brands fa-discord"></i>
+                                </a>
+                                <span class="resume">Discord</span>
+                            </div>
+                            <div class="tooltipIcon">
+                                <a href="https://www.codewars.com/users/elyassharifi" target="_blank" aria-label="Open CodeWars profile" class="socialIcon">
+                                    <i class="fa-solid fa-code"></i>
+                                </a>
+                                <span class="resume before">CodeWars</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tooltipIcon">
-                        <a href="https://x.com/leosharifi" target="_blank">
-                            <img src="img/twitter.jpg" alt="resume" class="resumeIcon">
-                        </a>
-                        <span class="resume">Twitter</span>
-                    </div>
-                    <div class="tooltipIcon">
-                        <a href="https://github.com/leosharifi" target="_blank">
-                            <img src="img/github.png" alt="resume" class="resumeIcon">
-                        </a>
-                        <span class="resume">GitHub</span>
-                    </div>
-                    <div class="tooltipIcon">
-                        <a href="https://discord.com/users/1420327753500328036" target="_blank">
-                            <img src="img/discord.webp" alt="resume" class="resumeIcon">
-                        </a>
-                        <span class="resume">Discord</span>
-                    </div>
-                    <div class="tooltipIcon">
-                        <a href="https://www.codewars.com/users/elyassharifi" target="_blank">
-                            <img src="img/codewars.png" alt="resume" class="resumeIcon">
-                        </a>
-                        <span class="resume before">CodeWars</span>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="shape shape-one"></div>
+                    <div class="shape shape-two"></div>
+                    <div class="shape shape-three"></div>
+                    <div class="profile-card">
+                        <img src="img/myProfile.png" alt="My Profile" class="ProfilePicture">
+                        <div class="profile-badge">
+                            <i class="fa-solid fa-code"></i>
+                            Front-end software engineer
+                        </div>
                     </div>
                 </div>
                 <div class="scroolBarIcon">
@@ -66,17 +114,26 @@
          <h2 class="aboutMe" id="about">
                  About Me! 
             </h2>
-        <section class="about">
-           
+            <div class="currentRole">
+                <div>
+                    <span class="roleLabel">Currently working at</span>
+                    <h3>Software Engineer at <a href="https://tiranatechstudio.com" target="_blank">Tirana Tech Studio</a></h3>
+                    <p>Building responsive front-end interfaces, improving usability, and helping turn client and business needs into clean, reliable web features.</p>
+                </div>
+                <a class="btn ghost" href="https://tiranatechstudio.com" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Visit Studio
+                </a>
+            </div>
             <section class="aboutContent">
               
                 <section class="textOrParagraph">
                     <div>
                         <p><i style="font-style: italic;">👋</i> Hi, I’m Elyas!</p>
                         <!-- <img src="img/photo_6179489007663169458_y.jpg" alt="MyImage" class="myprofile"> -->
-                        <p>I’m a passionate Front-end Web Developer at #100Devs, where my coding journey began through an amazing community lead by <a href="https://leonnoel.com" target="_blank" class="amazingTeacher">Leon Noel.</a></p>
-                        <p>Beyond coding, I’m an English teacher, passionate about sharing knowledge and helping others succeed. Whether it’s building your next big project or bringing ideas to life online, I’m here to collaborate.</p>
-                        <p>You can always reach me on Discord—let’s connect and create something incredible together!</p>
+                        <p>I’m a front-end software engineer who enjoys building polished, practical web products with HTML, CSS, JavaScript, TypeScript, React, and Next.js.</p>
+                        <p>I’m currently working at <a href="https://tiranatechstudio.com" target="_blank" class="amazingTeacher">Tirana Tech Studio</a>, where I contribute to UI implementation, responsive interfaces, and clean user experiences.</p>
+                        <p>I care about responsive layouts, accessible interfaces, maintainable code, and turning rough ideas into something people can actually use.</p>
                     </div>
                 </section>
                   <section class="textOrParagraph">     
@@ -84,7 +141,7 @@
                 </section>
             </section> 
         </section> 
-        <section class="exanded">
+        <section class="exanded" id="experience">
             <h2>Experience & Education</h2>
 
             <div class="secondcontainer">
@@ -93,17 +150,24 @@
                     <i class="fa-solid fa-briefcase educationIcon"></i>
                     Work Experience
                    </h3>
+                   <div class="infoBox featuredRole">
+                       <div class="circle"></div>
+                       <span class="currentBadge">Currently working</span>
+                       <p class="workPosition">Front-end Software Engineer</p>
+                       <p class="workTitle"><a href="https://tiranatechstudio.com" target="_blank">Tirana Tech Studio</a> • 2025 - Now</p>
+                       <p class="aboutWork">I currently work as a front-end software engineer at Tirana Tech Studio. My role focuses on building responsive interfaces, improving usability, maintaining clean front-end code, and collaborating with the team to turn requirements into reliable web features.</p>
+                   </div>
                    <div class="infoBox">
                        <div class="circle"></div>
                        <p class="workPosition">Front-end Web Developer</p>
                        <p class="workTitle">BizFusion • 2025 - Present</p>
-                       <p class="aboutWork">I’m a Software Engineer at BizFusion, specializing in front-end development. BizFusion is an open-source platform on <a href="https://github.com/RemTech/E-Commerce" >GitHub</a> that connects businesses across industries, making it easier to find opportunities and talent. My work focuses on crafting scalable solutions to enhance the platform’s efficiency while earning income through my contributions.</p>
+                       <p class="aboutWork">I contribute to BizFusion as a front-end developer, helping shape an open-source business platform on <a href="https://github.com/RemTech/E-Commerce" target="_blank">GitHub</a>. My work focuses on clean UI implementation, responsive layouts, and front-end improvements that make the platform easier to navigate and use.</p>
                    </div>
                    <div class="infoBox">
                         <div class="circle"></div>
                         <p class="workPosition">Full-Stack Web Developer</p>
                         <p class="workTitle">#100Devs • 2022 - Present</p>
-                        <p class="aboutWork">At #100Devs, I build and deploy full-stack web applications using HTML, CSS and JavaScript. Working in a collaborative environment, I develop responsive, accessible websites, integrate APIs, and optimize performance. Through hands-on problem-solving and networking, I continue to grow as a developer while contributing to real-world projects.</p>
+                        <p class="aboutWork">Through #100Devs, I built and deployed full-stack web applications, practiced client-ready development workflows, integrated APIs, and strengthened my foundation in JavaScript, responsive design, collaboration, and practical problem solving.</p>
                     </div>
                    
                 </div>
@@ -116,25 +180,25 @@
                         <div class="circle"></div>
                         <p class="workPosition">Full-Stack Web Development</p>
                         <p class="workTitle">#100Devs • 2022 - Present</p>
-                        <p class="aboutWork">As part of this intensive training, I have gained expertise in front-end and back-end development, API integration, and database management. The program emphasizes real-world projects, Agile methodologies, and professional networking, preparing me for success in the tech industry.</p>
+                        <p class="aboutWork">This training helped me build a strong foundation in front-end and back-end development, API integration, project structure, collaboration, and professional software engineering habits.</p>
                     </div>
                     <div class="infoBox">
                         <div class="circle"></div>
                         <p class="workPosition">HTML & CSS Full Course</p>
                         <p class="workTitle"> Traversy Media <a href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=3s">(YouTube)</a> • 2022, August - 2022, August</p>
-                        <p class="aboutWork">I completed <strong>the HTML & CSS Full Course </strong> by Brad Traversy on YouTube, which provided a comprehensive overview of web development basics. The course covered everything from HTML structure and semantic tags to CSS styling, layout techniques, and responsive design. It equipped me with the foundational knowledge to create well-structured, visually appealing, and mobile-friendly websites.</p>
+                        <p class="aboutWork">I completed Brad Traversy’s HTML and CSS course, strengthening my understanding of semantic markup, page structure, layout, styling, and responsive design fundamentals.</p>
                     </div>
                     
                     <div class="infoBox">
                         <div class="circle"></div>
                         <p class="workPosition">HTML & CSS</p>
                         <p class="workTitle">Shay Howe • 2022 - 2022, February</p>
-                        <p class="aboutWork">I completed Shay Howe’s <stong>HTML & CSS</stong> course, which provided a strong foundation in web development. This training covered semantic HTML, modern CSS techniques, responsive design, and best practices for building accessible and visually appealing websites. Thro   ugh hands-on exercises, I gained a deeper understanding of how to structure and style web pages effectively.</p>
+                        <p class="aboutWork">I completed Shay Howe’s HTML and CSS material, building a deeper understanding of accessible markup, CSS layout, and the principles behind well-structured web pages.</p>
                     </div>   
 
                 </div>
             </div>
-            <div class="skillsArea">
+            <div class="skillsArea" id="skills">
                 <div>
                     <h2>Skills</h2>
                     <div class="skillsContainer">
@@ -177,6 +241,26 @@
                             <div class="skillCard">
                                 <img class="skillLogo" src="img/NextJS.jpg" alt="NextLogo">
                                 <h3 class="skillName">Next.js</h3>
+                            </div>
+                            <div class="skillCard">
+                                <i class="fa-solid fa-server skillLogo skillIcon"></i>
+                                <h3 class="skillName">NestJS</h3>
+                            </div>
+                        </div>
+
+                        <h3><strong>Back-End & Database</strong></h3>
+                        <div class="skillSet">
+                            <div class="skillCard">
+                                <i class="fa-brands fa-node-js skillLogo skillIcon"></i>
+                                <h3 class="skillName">Node.js</h3>
+                            </div>
+                            <div class="skillCard">
+                                <i class="fa-solid fa-database skillLogo skillIcon"></i>
+                                <h3 class="skillName">PostgreSQL</h3>
+                            </div>
+                            <div class="skillCard">
+                                <i class="fa-solid fa-database skillLogo skillIcon"></i>
+                                <h3 class="skillName">SQL</h3>
                             </div>
                         </div>
 
@@ -227,7 +311,7 @@
 
 
             <!-- Recent Projects -->
-            <div class="recentProjects">
+            <div class="recentProjects" id="projects">
                 <h2>Recent Projects</h2>
 
                 <div class="projectsContainer">
@@ -239,7 +323,7 @@
                         </div>
                         <div class="projectDetails">
                             <h3>Productivity Timer</h3>
-                            <p>Productivity Timer helps users stay focused using the Pomodoro technique.</p>
+                            <p>A focused Pomodoro timer built to help users manage work sessions, breaks, and daily productivity with a simple, clean interface.</p>
                             <button>TypeScript</button>
                             <button>JavaScript</button>
                             <button>CSS3</button>
@@ -253,11 +337,11 @@
                         </div>
                         <div class="projectDetails">
                             <h3>Finance-Logger</h3>
-                            <p>Finance-Logger helps users easily record and organize their financial transactions in a clean, browser-based interface. You can add new invoices and payments, view a complete list of records, and manage your logs with a clear and minimal UI.</p>
+                            <p>A browser-based finance tracker for recording invoices and payments, organizing transaction history, and keeping personal logs easy to scan.</p>
                             <button>TypeScript</button>
                             <button>JavaScript</button>
                             <button>HTML5</button>
-                            <button>CSSC</button>
+                            <button>CSS3</button>
                         </div>
                     </div>
 
@@ -268,7 +352,7 @@
                         </div>
                         <div class="projectDetails">
                             <h3>RecipeFinder</h3>
-                            <p>RecipeFinder is a modern React-based web application that allows users to explore delicious recipes across different categories — including breakfast, dinner, vegetarian, desserts, and quick meals.</p>
+                            <p>A recipe discovery app for browsing meals by category, helping users quickly explore breakfast, dinner, vegetarian, dessert, and quick-meal ideas.</p>
                             <button>JavaScript</button>
                             <button>HTML5</button>
                             <button>CSS3</button>
@@ -282,7 +366,7 @@
                         </div>
                         <div class="projectDetails">
                             <h3>Mini-Story-App</h3>
-                            <p>Mini-Story-App is a simple React application that allows users to create, edit, and manage small stories. Each story includes the author’s name, title, date, and detailed content. The app saves stories to localStorage, so they persist between page reloads.</p>
+                            <p>A lightweight story manager where users can create, edit, and save short stories locally with author details, titles, dates, and content.</p>
                             <button>JavaScript</button>
                             <button>HTML5</button>
                             <button>CSS3</button>
@@ -296,7 +380,7 @@
                         </div>
                         <div class="projectDetails">
                             <h3>Task Tracker</h3>
-                            <p>Task Tracker is a simple yet powerful React application that allows users to add, delete, and set reminders for their tasks. It helps you stay organized and keep track of your daily activities efficiently.</p>
+                            <p>A task management app for adding, deleting, and setting reminders, designed to keep daily work organized without unnecessary complexity.</p>
                             <button>JavaScript</button>
                             <button>HTML5</button>
                             <button>CSS3</button>
@@ -310,7 +394,7 @@
                         </div>
                         <div class="projectDetails">
                             <h3>AstroView</h3>
-                            <p>a simple and interactive web app that lets you explore NASA’s Astronomy Picture of the Day (APOD).</p>
+                            <p>An interactive NASA APOD explorer that fetches astronomy images and details so users can discover a new space feature each day.</p>
                             <button>HTML5</button>
                             <button>CSS3</button>
                             <button>JavaScript</button>
@@ -325,7 +409,7 @@
                         </div>
                         <div class="projectDetails">
                             <h3>Cocktail Finder</h3>
-                            <p>An application to find and explore various cocktail recipes.</p>
+                            <p>A cocktail recipe finder that lets users search drinks, explore ingredients, and discover new recipes through an API-powered interface.</p>
                             <button>HTML5</button>
                             <button>CSS3</button>
                             <button>JavaScript</button>
@@ -341,7 +425,7 @@
                         </div>
                         <div class="projectDetails">
                             <h3>Push-Work</h3>
-                            <p>A responsive layout built with HTML and CSS to showcase clean design and structure.</p>
+                            <p>A responsive HTML and CSS layout focused on clean structure, balanced spacing, and practical landing-page presentation.</p>
                             <button>HTML5</button>
                             <button>CSS3</button>
                         </div>
@@ -350,12 +434,12 @@
                 </div>
             </div>
             <!--Get In Touch -->
-            <div class="getInTouch">
+            <div class="getInTouch" id="contact">
                 <h2>Get In Touch</h2>
                 <div class="contactContainer">
                     <div class="contactInfo">
                         <h3>Contact Information</h3>
-                        <p>Feel free to reach out to me through any of these platforms. I'll get back to you as soon as possible.</p>
+                        <p>Have a project, role, or collaboration in mind? Reach out through any platform below and I’ll get back to you as soon as I can.</p>
                         <div class="socialLinks"> <!--Social Icons-->
                             <a href="mailto:elyassharifi2548@gmail.com" target="_blank">
                                 <i class="fa-regular fa-envelope i"></i>
@@ -395,6 +479,7 @@
             </div>  
     </section> 
     </div>
+    <div class="toastArea" aria-live="polite" aria-atomic="true"></div>
 
     <script src="script.js"></script>
 </body>
